@@ -13,6 +13,9 @@
 		C3C61550194C9D18007BBEEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C6154E194C9D18007BBEEB /* Main.storyboard */; };
 		C3C61552194C9D18007BBEEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C61551194C9D18007BBEEB /* Images.xcassets */; };
 		C3C6155E194C9D18007BBEEB /* Re_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6155D194C9D18007BBEEB /* Re_SearchTests.swift */; };
+		C3C61585194CA911007BBEEB /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C61584194CA911007BBEEB /* ActionViewController.swift */; };
+		C3C61587194CA911007BBEEB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C61586194CA911007BBEEB /* MainInterface.storyboard */; };
+		C3C6158A194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3C61580194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,35 @@
 			remoteGlobalIDString = C3C61542194C9D18007BBEEB;
 			remoteInfo = "Re-Search";
 		};
+		C3C61588194CA911007BBEEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3C6153B194C9D18007BBEEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C6157F194CA911007BBEEB;
+			remoteInfo = Choose;
+		};
+		C3C6158B194CA911007BBEEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3C6153B194C9D18007BBEEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3C6157F194CA911007BBEEB;
+			remoteInfo = Choose;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3C6157B194CA901007BBEEB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3C6158A194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C3C61543194C9D18007BBEEB /* Re-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +67,10 @@
 		C3C61557194C9D18007BBEEB /* Re-SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Re-SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C6155C194C9D18007BBEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C6155D194C9D18007BBEEB /* Re_SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Re_SearchTests.swift; sourceTree = "<group>"; };
+		C3C61580194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "org.horizon-nigh.Re-Search.Choose.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C61583194CA911007BBEEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C61584194CA911007BBEEB /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		C3C61586194CA911007BBEEB /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +88,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3C6157D194CA911007BBEEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +103,7 @@
 			children = (
 				C3C61545194C9D18007BBEEB /* Re-Search */,
 				C3C6155A194C9D18007BBEEB /* Re-SearchTests */,
+				C3C61581194CA911007BBEEB /* Choose */,
 				C3C61544194C9D18007BBEEB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +113,7 @@
 			children = (
 				C3C61543194C9D18007BBEEB /* Re-Search.app */,
 				C3C61557194C9D18007BBEEB /* Re-SearchTests.xctest */,
+				C3C61580194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C3C61581194CA911007BBEEB /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				C3C61584194CA911007BBEEB /* ActionViewController.swift */,
+				C3C61586194CA911007BBEEB /* MainInterface.storyboard */,
+				C3C61582194CA911007BBEEB /* Supporting Files */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
+		C3C61582194CA911007BBEEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C61583194CA911007BBEEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +184,13 @@
 				C3C6153F194C9D18007BBEEB /* Sources */,
 				C3C61540194C9D18007BBEEB /* Frameworks */,
 				C3C61541194C9D18007BBEEB /* Resources */,
+				C3C6157B194CA901007BBEEB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3C61589194CA911007BBEEB /* PBXTargetDependency */,
+				C3C6158C194CA911007BBEEB /* PBXTargetDependency */,
 			);
 			name = "Re-Search";
 			productName = "Re-Search";
@@ -150,6 +215,23 @@
 			productReference = C3C61557194C9D18007BBEEB /* Re-SearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C3C6157F194CA911007BBEEB /* Choose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C6158D194CA911007BBEEB /* Build configuration list for PBXNativeTarget "Choose" */;
+			buildPhases = (
+				C3C6157C194CA911007BBEEB /* Sources */,
+				C3C6157D194CA911007BBEEB /* Frameworks */,
+				C3C6157E194CA911007BBEEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Choose;
+			productName = Choose;
+			productReference = C3C61580194CA911007BBEEB /* org.horizon-nigh.Re-Search.Choose.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +247,9 @@
 					C3C61556194C9D18007BBEEB = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = C3C61542194C9D18007BBEEB;
+					};
+					C3C6157F194CA911007BBEEB = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -183,6 +268,7 @@
 			targets = (
 				C3C61542194C9D18007BBEEB /* Re-Search */,
 				C3C61556194C9D18007BBEEB /* Re-SearchTests */,
+				C3C6157F194CA911007BBEEB /* Choose */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C6157E194CA911007BBEEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C61587194CA911007BBEEB /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +319,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3C6157C194CA911007BBEEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C61585194CA911007BBEEB /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +334,16 @@
 			isa = PBXTargetDependency;
 			target = C3C61542194C9D18007BBEEB /* Re-Search */;
 			targetProxy = C3C61558194C9D18007BBEEB /* PBXContainerItemProxy */;
+		};
+		C3C61589194CA911007BBEEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C6157F194CA911007BBEEB /* Choose */;
+			targetProxy = C3C61588194CA911007BBEEB /* PBXContainerItemProxy */;
+		};
+		C3C6158C194CA911007BBEEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3C6157F194CA911007BBEEB /* Choose */;
+			targetProxy = C3C6158B194CA911007BBEEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -384,6 +496,32 @@
 			};
 			name = Release;
 		};
+		C3C6158E194CA911007BBEEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Choose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "org.horizon-nigh.Re-Search.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3C6158F194CA911007BBEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Choose/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "org.horizon-nigh.Re-Search.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +547,14 @@
 			buildConfigurations = (
 				C3C61565194C9D18007BBEEB /* Debug */,
 				C3C61566194C9D18007BBEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3C6158D194CA911007BBEEB /* Build configuration list for PBXNativeTarget "Choose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C6158E194CA911007BBEEB /* Debug */,
+				C3C6158F194CA911007BBEEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
