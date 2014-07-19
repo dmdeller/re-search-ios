@@ -17,19 +17,25 @@
 
 @implementation ActionRequestHandler
 
-- (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {
+- (void)beginRequestWithExtensionContext:(NSExtensionContext *)context
+{
     self.extensionContext = context;
     
     __block BOOL found = NO;
     
     // Find the item containing the results from the JavaScript preprocessing.
-    [context.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem* item, NSUInteger idx, BOOL *stop) {
-        [item.attachments enumerateObjectsUsingBlock:^(NSItemProvider* itemProvider, NSUInteger idx, BOOL *stop) {
-            if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypePropertyList]) {
-                [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypePropertyList options:nil completionHandler:^(NSDictionary *dictionary, NSError *error) {
-                    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                        [self itemLoadCompletedWithPreprocessingResults:dictionary[NSExtensionJavaScriptPreprocessingResultsKey]];
-                    }];
+    [context.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem* item, NSUInteger idx, BOOL *stop)
+    {
+        [item.attachments enumerateObjectsUsingBlock:^(NSItemProvider* itemProvider, NSUInteger idx, BOOL *stop)
+        {
+            if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypePropertyList])
+            {
+                [itemProvider loadItemForTypeIdentifier:(NSString *)kUTTypePropertyList options:nil completionHandler:^(NSDictionary *dictionary, NSError *error)
+                {
+                    [[NSOperationQueue mainQueue] addOperationWithBlock:^
+                     {
+                         [self itemLoadCompletedWithPreprocessingResults:dictionary[NSExtensionJavaScriptPreprocessingResultsKey]];
+                     }];
                 }];
                 found = YES;
             }
@@ -38,29 +44,36 @@
         *stop = found;
     }];
     
-    if (!found) {
+    if (!found)
+    {
         [self doneWithResults:nil];
     }
 }
 
-- (void)itemLoadCompletedWithPreprocessingResults:(NSDictionary *)javaScriptPreprocessingResults {
+- (void)itemLoadCompletedWithPreprocessingResults:(NSDictionary *)javaScriptPreprocessingResults
+{
     // Here, do something, potentially asynchronously, with the preprocessing
     // results.
     
     // In this very simple example, the JavaScript will have passed us the
     // current background color style, if there is one. We will construct a
     // dictionary to send back with a desired new background color style.
-    if ([javaScriptPreprocessingResults[@"currentBackgroundColor"] length] == 0) {
+    if ([javaScriptPreprocessingResults[@"currentBackgroundColor"] length] == 0)
+    {
         // No specific background color? Request setting the background to red.
         [self doneWithResults:@{ @"newBackgroundColor": @"red" }];
-    } else {
+    }
+    else
+    {
         // Specific background color is set? Request replacing it with green.
         [self doneWithResults:@{ @"newBackgroundColor": @"green" }];
     }
 }
 
-- (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize {
-    if (resultsForJavaScriptFinalize) {
+- (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize
+{
+    if (resultsForJavaScriptFinalize)
+    {
         // Construct an NSExtensionItem of the appropriate type to return our
         // results dictionary in.
         
@@ -76,7 +89,9 @@
         
         // Signal that we're complete, returning our results.
         [self.extensionContext completeRequestReturningItems:@[resultsItem] completionHandler:nil];
-    } else {
+    }
+    else
+    {
         // We still need to signal that we're done even if we have nothing to
         // pass back.
         [self.extensionContext completeRequestReturningItems:nil completionHandler:nil];
