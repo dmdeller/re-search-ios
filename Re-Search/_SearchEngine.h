@@ -7,6 +7,7 @@
 extern const struct SearchEngineAttributes {
 	__unsafe_unretained NSString *icon;
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *order;
 	__unsafe_unretained NSString *urlPattern;
 } SearchEngineAttributes;
 
@@ -29,6 +30,14 @@ extern const struct SearchEngineAttributes {
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
 
+@property (nonatomic, strong) NSNumber* order;
+
+@property (atomic) int16_t orderValue;
+- (int16_t)orderValue;
+- (void)setOrderValue:(int16_t)value_;
+
+//- (BOOL)validateOrder:(id*)value_ error:(NSError**)error_;
+
 @property (nonatomic, strong) NSString* urlPattern;
 
 //- (BOOL)validateUrlPattern:(id*)value_ error:(NSError**)error_;
@@ -42,6 +51,12 @@ extern const struct SearchEngineAttributes {
 
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+- (NSNumber*)primitiveOrder;
+- (void)setPrimitiveOrder:(NSNumber*)value;
+
+- (int16_t)primitiveOrderValue;
+- (void)setPrimitiveOrderValue:(int16_t)value_;
 
 - (NSString*)primitiveUrlPattern;
 - (void)setPrimitiveUrlPattern:(NSString*)value;

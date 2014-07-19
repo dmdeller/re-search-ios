@@ -8,6 +8,10 @@
 
 #import "EnginesViewController.h"
 
+#import "SearchEngine.h"
+
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+
 @interface EnginesViewController ()
 
 @property NSArray *searchEngines;
@@ -33,7 +37,7 @@
 
 - (void)loadData
 {
-    
+    self.searchEngines = [SearchEngine MR_findAllSortedBy:@"order" ascending:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -48,6 +52,19 @@
     return self.searchEngines.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SearchEngine *searchEngine = self.searchEngines[indexPath.row];
+    
+    static NSString *kCellID = @"engineCell";
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kCellID forIndexPath:indexPath];
+    
+    cell.textLabel.text = searchEngine.name;
+    cell.detailTextLabel.text = searchEngine.urlPattern;
+    
+    return cell;
+}
 
+#pragma mark - UITableViewDelegate
 
 @end
