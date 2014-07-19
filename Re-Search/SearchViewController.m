@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  SecondViewController.m
 //  Re-Search
 //
 //  Created by David on 7/19/14.
 //  Copyright (c) 2014 David Deller. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "SearchViewController.h"
 
-@interface FirstViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation SearchViewController
             
 - (void)viewDidLoad {
     [super viewDidLoad];

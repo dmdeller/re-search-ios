@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		C3B906F0197ADCC70098712F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906EF197ADCC70098712F /* main.m */; };
 		C3B906F3197ADCC70098712F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F2197ADCC70098712F /* AppDelegate.m */; };
-		C3B906F6197ADCC70098712F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F5197ADCC70098712F /* FirstViewController.m */; };
-		C3B906F9197ADCC70098712F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F8197ADCC70098712F /* SecondViewController.m */; };
+		C3B906F6197ADCC70098712F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F5197ADCC70098712F /* WelcomeViewController.m */; };
+		C3B906F9197ADCC70098712F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F8197ADCC70098712F /* SearchViewController.m */; };
 		C3B906FC197ADCC70098712F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B906FA197ADCC70098712F /* Main.storyboard */; };
 		C3B906FE197ADCC70098712F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B906FD197ADCC70098712F /* Images.xcassets */; };
 		C3B9070A197ADCC70098712F /* Re_SearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90709197ADCC70098712F /* Re_SearchTests.m */; };
+		C3B90715197AE1F50098712F /* EnginesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90714197AE1F50098712F /* EnginesViewController.m */; };
+		C3B9074F197AE4ED0098712F /* Re-Search.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3B9074D197AE4ED0098712F /* Re-Search.xcdatamodeld */; };
+		C3B90756197AE55F0098712F /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90755197AE55F0098712F /* Record.m */; };
+		C3B9075B197AE6EB0098712F /* _SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90758197AE6EB0098712F /* _SearchEngine.m */; };
+		C3B9075C197AE6EB0098712F /* SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B9075A197AE6EB0098712F /* SearchEngine.m */; };
+		C3B9075F197AE6FC0098712F /* regenerate-models.rb in Resources */ = {isa = PBXBuildFile; fileRef = C3B9075E197AE6FC0098712F /* regenerate-models.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +38,25 @@
 		C3B906EF197ADCC70098712F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3B906F1197ADCC70098712F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3B906F2197ADCC70098712F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3B906F4197ADCC70098712F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		C3B906F5197ADCC70098712F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		C3B906F7197ADCC70098712F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		C3B906F8197ADCC70098712F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C3B906F4197ADCC70098712F /* WelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		C3B906F5197ADCC70098712F /* WelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		C3B906F7197ADCC70098712F /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C3B906F8197ADCC70098712F /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		C3B906FB197ADCC70098712F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3B906FD197ADCC70098712F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C3B90703197ADCC70098712F /* Re-SearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Re-SearchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B90708197ADCC70098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B90709197ADCC70098712F /* Re_SearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Re_SearchTests.m; sourceTree = "<group>"; };
+		C3B90713197AE1F50098712F /* EnginesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnginesViewController.h; sourceTree = "<group>"; };
+		C3B90714197AE1F50098712F /* EnginesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnginesViewController.m; sourceTree = "<group>"; };
+		C3B9074E197AE4ED0098712F /* Re-Search.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Re-Search.xcdatamodel"; sourceTree = "<group>"; };
+		C3B90754197AE55F0098712F /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		C3B90755197AE55F0098712F /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		C3B90757197AE6EB0098712F /* _SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SearchEngine.h; sourceTree = "<group>"; };
+		C3B90758197AE6EB0098712F /* _SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SearchEngine.m; sourceTree = "<group>"; };
+		C3B90759197AE6EB0098712F /* SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEngine.h; sourceTree = "<group>"; };
+		C3B9075A197AE6EB0098712F /* SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEngine.m; sourceTree = "<group>"; };
+		C3B9075E197AE6FC0098712F /* regenerate-models.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = "regenerate-models.rb"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +100,8 @@
 			children = (
 				C3B906F1197ADCC70098712F /* AppDelegate.h */,
 				C3B906F2197ADCC70098712F /* AppDelegate.m */,
-				C3B906F4197ADCC70098712F /* FirstViewController.h */,
-				C3B906F5197ADCC70098712F /* FirstViewController.m */,
-				C3B906F7197ADCC70098712F /* SecondViewController.h */,
-				C3B906F8197ADCC70098712F /* SecondViewController.m */,
-				C3B906FA197ADCC70098712F /* Main.storyboard */,
+				C3B9074B197AE29E0098712F /* View Controllers */,
+				C3B9074C197AE2A50098712F /* Data Model */,
 				C3B906FD197ADCC70098712F /* Images.xcassets */,
 				C3B906ED197ADCC70098712F /* Supporting Files */,
 			);
@@ -119,6 +132,43 @@
 				C3B90708197ADCC70098712F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B9074B197AE29E0098712F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3B906FA197ADCC70098712F /* Main.storyboard */,
+				C3B906F4197ADCC70098712F /* WelcomeViewController.h */,
+				C3B906F5197ADCC70098712F /* WelcomeViewController.m */,
+				C3B906F7197ADCC70098712F /* SearchViewController.h */,
+				C3B906F8197ADCC70098712F /* SearchViewController.m */,
+				C3B90713197AE1F50098712F /* EnginesViewController.h */,
+				C3B90714197AE1F50098712F /* EnginesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3B9074C197AE2A50098712F /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B9074D197AE4ED0098712F /* Re-Search.xcdatamodeld */,
+				C3B9075E197AE6FC0098712F /* regenerate-models.rb */,
+				C3B9075D197AE6EF0098712F /* Generated by mogenerator */,
+				C3B90754197AE55F0098712F /* Record.h */,
+				C3B90755197AE55F0098712F /* Record.m */,
+				C3B90759197AE6EB0098712F /* SearchEngine.h */,
+				C3B9075A197AE6EB0098712F /* SearchEngine.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		C3B9075D197AE6EF0098712F /* Generated by mogenerator */ = {
+			isa = PBXGroup;
+			children = (
+				C3B90757197AE6EB0098712F /* _SearchEngine.h */,
+				C3B90758197AE6EB0098712F /* _SearchEngine.m */,
+			);
+			name = "Generated by mogenerator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +253,7 @@
 			files = (
 				C3B906FC197ADCC70098712F /* Main.storyboard in Resources */,
 				C3B906FE197ADCC70098712F /* Images.xcassets in Resources */,
+				C3B9075F197AE6FC0098712F /* regenerate-models.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B906F9197ADCC70098712F /* SecondViewController.m in Sources */,
+				C3B906F9197ADCC70098712F /* SearchViewController.m in Sources */,
 				C3B906F3197ADCC70098712F /* AppDelegate.m in Sources */,
-				C3B906F6197ADCC70098712F /* FirstViewController.m in Sources */,
+				C3B90756197AE55F0098712F /* Record.m in Sources */,
+				C3B906F6197ADCC70098712F /* WelcomeViewController.m in Sources */,
+				C3B90715197AE1F50098712F /* EnginesViewController.m in Sources */,
+				C3B9075B197AE6EB0098712F /* _SearchEngine.m in Sources */,
+				C3B9075C197AE6EB0098712F /* SearchEngine.m in Sources */,
+				C3B9074F197AE4ED0098712F /* Re-Search.xcdatamodeld in Sources */,
 				C3B906F0197ADCC70098712F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +396,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Re-Search/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Re-Search/Re-Search-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -351,9 +410,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Re-Search/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Re-Search/Re-Search-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -410,6 +471,7 @@
 				C3B9070F197ADCC70098712F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B90710197ADCC70098712F /* Build configuration list for PBXNativeTarget "Re-SearchTests" */ = {
 			isa = XCConfigurationList;
@@ -418,8 +480,22 @@
 				C3B90712197ADCC70098712F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3B9074D197AE4ED0098712F /* Re-Search.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3B9074E197AE4ED0098712F /* Re-Search.xcdatamodel */,
+			);
+			currentVersion = C3B9074E197AE4ED0098712F /* Re-Search.xcdatamodel */;
+			path = "Re-Search.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C3B906E2197ADCC60098712F /* Project object */;
 }

@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  FirstViewController.m
 //  Re-Search
 //
 //  Created by David on 7/19/14.
 //  Copyright (c) 2014 David Deller. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "WelcomeViewController.h"
 
-@interface SecondViewController ()
+@interface WelcomeViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation WelcomeViewController
             
 - (void)viewDidLoad {
     [super viewDidLoad];
