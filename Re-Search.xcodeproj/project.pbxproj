@@ -22,6 +22,12 @@
 		C3B9075C197AE6EB0098712F /* SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B9075A197AE6EB0098712F /* SearchEngine.m */; };
 		C3B9075F197AE6FC0098712F /* regenerate-models.rb in Resources */ = {isa = PBXBuildFile; fileRef = C3B9075E197AE6FC0098712F /* regenerate-models.rb */; };
 		C3B90766197AFF740098712F /* SearchEngine.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3B90761197AF8160098712F /* SearchEngine.json */; };
+		C3B90771197B0A950098712F /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90770197B0A950098712F /* ActionRequestHandler.m */; };
+		C3B90773197B0A950098712F /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = C3B90772197B0A950098712F /* Action.js */; };
+		C3B90777197B0A950098712F /* Re-Search: Favourite.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */; };
+		C3B90787197B0AA70098712F /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90786197B0AA70098712F /* ActionViewController.m */; };
+		C3B90789197B0AA70098712F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B90788197B0AA70098712F /* MainInterface.storyboard */; };
+		C3B9078C197B0AA70098712F /* Re-Search: Choose.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3B90781197B0AA70098712F /* Re-Search: Choose.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = C3B906E9197ADCC70098712F;
 			remoteInfo = "Re-Search";
+		};
+		C3B90774197B0A950098712F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B9076A197B0A950098712F;
+			remoteInfo = "Re-Search: Favourite";
+		};
+		C3B90778197B0A950098712F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B9076A197B0A950098712F;
+			remoteInfo = "Re-Search: Favourite";
+		};
+		C3B9078A197B0AA70098712F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B90780197B0AA70098712F;
+			remoteInfo = "Re-Search: Choose";
+		};
+		C3B9078D197B0AA70098712F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B90780197B0AA70098712F;
+			remoteInfo = "Re-Search: Choose";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,6 +77,18 @@
 			files = (
 				C3B90766197AFF740098712F /* SearchEngine.json in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B90776197B0A950098712F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3B9078C197B0AA70098712F /* Re-Search: Choose.appex in Embed App Extensions */,
+				C3B90777197B0A950098712F /* Re-Search: Favourite.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -74,6 +120,16 @@
 		C3B9075A197AE6EB0098712F /* SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEngine.m; sourceTree = "<group>"; };
 		C3B9075E197AE6FC0098712F /* regenerate-models.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = "regenerate-models.rb"; sourceTree = SOURCE_ROOT; };
 		C3B90761197AF8160098712F /* SearchEngine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchEngine.json; sourceTree = "<group>"; };
+		C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Re-Search: Favourite.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B9076E197B0A950098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B9076F197B0A950098712F /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
+		C3B90770197B0A950098712F /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
+		C3B90772197B0A950098712F /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		C3B90781197B0AA70098712F /* Re-Search: Choose.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Re-Search: Choose.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B90784197B0AA70098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B90785197B0AA70098712F /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		C3B90786197B0AA70098712F /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		C3B90788197B0AA70098712F /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		CEBF8C9676E24178A543322A /* Pods-Re-Search.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Re-Search.xcconfig"; path = "Pods/Pods-Re-Search.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +149,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3B90768197B0A950098712F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B9077E197B0AA70098712F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +171,8 @@
 			children = (
 				C3B906EC197ADCC70098712F /* Re-Search */,
 				C3B90706197ADCC70098712F /* Re-SearchTests */,
+				C3B9076C197B0A950098712F /* Re-Search: Favourite */,
+				C3B90782197B0AA70098712F /* Re-Search: Choose */,
 				C3B906EB197ADCC70098712F /* Products */,
 				CEBF8C9676E24178A543322A /* Pods-Re-Search.xcconfig */,
 				D418520BD9BF4A5E8FC00687 /* Frameworks */,
@@ -112,6 +184,8 @@
 			children = (
 				C3B906EA197ADCC70098712F /* Re-Search.app */,
 				C3B90703197ADCC70098712F /* Re-SearchTests.xctest */,
+				C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */,
+				C3B90781197B0AA70098712F /* Re-Search: Choose.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +275,44 @@
 			path = "Seed Data";
 			sourceTree = SOURCE_ROOT;
 		};
+		C3B9076C197B0A950098712F /* Re-Search: Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				C3B9076F197B0A950098712F /* ActionRequestHandler.h */,
+				C3B90770197B0A950098712F /* ActionRequestHandler.m */,
+				C3B90772197B0A950098712F /* Action.js */,
+				C3B9076D197B0A950098712F /* Supporting Files */,
+			);
+			path = "Re-Search: Favourite";
+			sourceTree = "<group>";
+		};
+		C3B9076D197B0A950098712F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B9076E197B0A950098712F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B90782197B0AA70098712F /* Re-Search: Choose */ = {
+			isa = PBXGroup;
+			children = (
+				C3B90785197B0AA70098712F /* ActionViewController.h */,
+				C3B90786197B0AA70098712F /* ActionViewController.m */,
+				C3B90788197B0AA70098712F /* MainInterface.storyboard */,
+				C3B90783197B0AA70098712F /* Supporting Files */,
+			);
+			path = "Re-Search: Choose";
+			sourceTree = "<group>";
+		};
+		C3B90783197B0AA70098712F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B90784197B0AA70098712F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D418520BD9BF4A5E8FC00687 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,10 +334,15 @@
 				C3B906E8197ADCC70098712F /* Resources */,
 				B63874885B724A13AD15ABA6 /* Copy Pods Resources */,
 				C3B90764197AFF0F0098712F /* CopyFiles */,
+				C3B90776197B0A950098712F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3B90775197B0A950098712F /* PBXTargetDependency */,
+				C3B90779197B0A950098712F /* PBXTargetDependency */,
+				C3B9078B197B0AA70098712F /* PBXTargetDependency */,
+				C3B9078E197B0AA70098712F /* PBXTargetDependency */,
 			);
 			name = "Re-Search";
 			productName = "Re-Search";
@@ -250,6 +367,40 @@
 			productReference = C3B90703197ADCC70098712F /* Re-SearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C3B9076A197B0A950098712F /* Re-Search: Favourite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B9077A197B0A950098712F /* Build configuration list for PBXNativeTarget "Re-Search: Favourite" */;
+			buildPhases = (
+				C3B90767197B0A950098712F /* Sources */,
+				C3B90768197B0A950098712F /* Frameworks */,
+				C3B90769197B0A950098712F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Re-Search: Favourite";
+			productName = "Re-Search: Favourite";
+			productReference = C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C3B90780197B0AA70098712F /* Re-Search: Choose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B9078F197B0AA70098712F /* Build configuration list for PBXNativeTarget "Re-Search: Choose" */;
+			buildPhases = (
+				C3B9077D197B0AA70098712F /* Sources */,
+				C3B9077E197B0AA70098712F /* Frameworks */,
+				C3B9077F197B0AA70098712F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Re-Search: Choose";
+			productName = "Re-Search: Choose";
+			productReference = C3B90781197B0AA70098712F /* Re-Search: Choose.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +416,12 @@
 					C3B90702197ADCC70098712F = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = C3B906E9197ADCC70098712F;
+					};
+					C3B9076A197B0A950098712F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C3B90780197B0AA70098712F = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -283,6 +440,8 @@
 			targets = (
 				C3B906E9197ADCC70098712F /* Re-Search */,
 				C3B90702197ADCC70098712F /* Re-SearchTests */,
+				C3B9076A197B0A950098712F /* Re-Search: Favourite */,
+				C3B90780197B0AA70098712F /* Re-Search: Choose */,
 			);
 		};
 /* End PBXProject section */
@@ -302,6 +461,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B90769197B0A950098712F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B90773197B0A950098712F /* Action.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B9077F197B0AA70098712F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B90789197B0AA70098712F /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +540,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C3B90767197B0A950098712F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B90771197B0A950098712F /* ActionRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B9077D197B0AA70098712F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B90787197B0AA70098712F /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -372,6 +563,26 @@
 			isa = PBXTargetDependency;
 			target = C3B906E9197ADCC70098712F /* Re-Search */;
 			targetProxy = C3B90704197ADCC70098712F /* PBXContainerItemProxy */;
+		};
+		C3B90775197B0A950098712F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B9076A197B0A950098712F /* Re-Search: Favourite */;
+			targetProxy = C3B90774197B0A950098712F /* PBXContainerItemProxy */;
+		};
+		C3B90779197B0A950098712F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B9076A197B0A950098712F /* Re-Search: Favourite */;
+			targetProxy = C3B90778197B0A950098712F /* PBXContainerItemProxy */;
+		};
+		C3B9078B197B0AA70098712F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B90780197B0AA70098712F /* Re-Search: Choose */;
+			targetProxy = C3B9078A197B0AA70098712F /* PBXContainerItemProxy */;
+		};
+		C3B9078E197B0AA70098712F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B90780197B0AA70098712F /* Re-Search: Choose */;
+			targetProxy = C3B9078D197B0AA70098712F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,6 +739,54 @@
 			};
 			name = Release;
 		};
+		C3B9077B197B0A950098712F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Re-Search: Favourite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3B9077C197B0A950098712F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Re-Search: Favourite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3B90790197B0AA70098712F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Re-Search: Choose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3B90791197B0AA70098712F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Re-Search: Choose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +816,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C3B9077A197B0A950098712F /* Build configuration list for PBXNativeTarget "Re-Search: Favourite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B9077B197B0A950098712F /* Debug */,
+				C3B9077C197B0A950098712F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3B9078F197B0AA70098712F /* Build configuration list for PBXNativeTarget "Re-Search: Choose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B90790197B0AA70098712F /* Debug */,
+				C3B90791197B0AA70098712F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
