@@ -3,28 +3,28 @@
         "id": "7A8141DE-CC69-46F0-B913-2719102ED88B",
         "name": "Google",
         "order": 0,
-        "urlPattern": "https://encrypted.google.com/search?hl=en&q=%",
+        "urlPattern": "https://encrypted.google.com/search?hl=en&q=🔤",
         "mutable": false
     },
     {
         "id": "B27CE644-9CF6-49F8-BC0F-8C82B8479496",
         "name": "Yahoo",
         "order": 1,
-        "urlPattern": "https://search.yahoo.com/search?p=%",
+        "urlPattern": "https://search.yahoo.com/search?p=🔤",
         "mutable": false
     },
     {
         "id": "6F87078F-1B51-4038-9305-4D8674713A5F",
         "name": "Bing",
         "order": 2,
-        "urlPattern": "https://www.bing.com/search?q=%",
+        "urlPattern": "https://www.bing.com/search?q=🔤",
         "mutable": false
     },
     {
         "id": "11A7CF8D-9908-4D9E-B38C-68DD7E118958",
         "name": "DuckDuckGo",
         "order": 3,
-        "urlPattern": "https://duckduckgo.com/?q=%",
+        "urlPattern": "https://duckduckgo.com/?q=🔤",
         "mutable": false
     }
 ]

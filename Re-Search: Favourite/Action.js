@@ -17,7 +17,8 @@ Action.prototype = {
         // We will not modify anything, but will pass the body's background
         // style to the native code.
         
-        arguments.completionFunction({ "currentBackgroundColor" : document.body.style.backgroundColor })
+        arguments.completionFunction({ "currentBackgroundColor" : document.body.style.backgroundColor,
+                                     "url": window.location.href});
     },
     
     finalize: function(arguments) {
@@ -26,18 +27,24 @@ Action.prototype = {
         // We'll see if the native code has passed us a new background style,
         // and set it on the body.
         
-        var newBackgroundColor = arguments["newBackgroundColor"]
-        if (newBackgroundColor) {
-            // We'll set document.body.style.background, to override any
-            // existing background.
-            document.body.style.background = newBackgroundColor
-        } else {
-            // If nothing's been returned to us, we'll set the background to
-            // blue.
-            document.body.style.background= "blue"
+//        var newBackgroundColor = arguments["newBackgroundColor"]
+//        if (newBackgroundColor) {
+//            // We'll set document.body.style.background, to override any
+//            // existing background.
+//            document.body.style.background = newBackgroundColor;
+//        } else {
+//            // If nothing's been returned to us, we'll set the background to
+//            // blue.
+//            document.body.style.background= "blue";
+//        }
+        
+        var newURL = arguments['newURL'];
+        if (newURL)
+        {
+            window.location.href = newURL;
         }
     }
     
 };
     
-var ExtensionPreprocessingJS = new Action
+var ExtensionPreprocessingJS = new Action;

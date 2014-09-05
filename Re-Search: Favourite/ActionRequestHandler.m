@@ -23,10 +23,13 @@
     
     __block BOOL found = NO;
     
+    NSLog(@"context: %@", context);
+    NSLog(@"context.inputItems: %@", context.inputItems);
+    
     // Find the item containing the results from the JavaScript preprocessing.
-    [context.inputItems enumerateObjectsUsingBlock:^(NSExtensionItem* item, NSUInteger idx, BOOL *stop)
+    for (NSExtensionItem* item in context.inputItems)
     {
-        [item.attachments enumerateObjectsUsingBlock:^(NSItemProvider* itemProvider, NSUInteger idx, BOOL *stop)
+        for (NSItemProvider* itemProvider in item.attachments)
         {
             if ([itemProvider hasItemConformingToTypeIdentifier:(NSString *)kUTTypePropertyList])
             {
@@ -39,10 +42,12 @@
                 }];
                 found = YES;
             }
-            *stop = found;
-        }];
-        *stop = found;
-    }];
+            
+            if (found) break;
+        }
+        
+        if (found) break;
+    }
     
     if (!found)
     {
@@ -55,19 +60,22 @@
     // Here, do something, potentially asynchronously, with the preprocessing
     // results.
     
-    // In this very simple example, the JavaScript will have passed us the
-    // current background color style, if there is one. We will construct a
-    // dictionary to send back with a desired new background color style.
-    if ([javaScriptPreprocessingResults[@"currentBackgroundColor"] length] == 0)
-    {
-        // No specific background color? Request setting the background to red.
-        [self doneWithResults:@{ @"newBackgroundColor": @"red" }];
-    }
-    else
-    {
-        // Specific background color is set? Request replacing it with green.
-        [self doneWithResults:@{ @"newBackgroundColor": @"green" }];
-    }
+//    // In this very simple example, the JavaScript will have passed us the
+//    // current background color style, if there is one. We will construct a
+//    // dictionary to send back with a desired new background color style.
+//    if ([javaScriptPreprocessingResults[@"currentBackgroundColor"] length] == 0)
+//    {
+//        // No specific background color? Request setting the background to red.
+//        [self doneWithResults:@{ @"newBackgroundColor": @"red" }];
+//    }
+//    else
+//    {
+//        // Specific background color is set? Request replacing it with green.
+//        [self doneWithResults:@{ @"newBackgroundColor": @"green" }];
+//    }
+    
+    NSLog(@"Look it's a URL! %@", javaScriptPreprocessingResults[@"url"]);
+    [self doneWithResults:@{@"newURL": @"https://duckduckgo.com"}];
 }
 
 - (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize

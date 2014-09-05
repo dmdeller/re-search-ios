@@ -824,6 +824,7 @@
 				C3B9077C197B0A950098712F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B9078F197B0AA70098712F /* Build configuration list for PBXNativeTarget "Re-Search: Choose" */ = {
 			isa = XCConfigurationList;
@@ -832,6 +833,7 @@
 				C3B90791197B0AA70098712F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
