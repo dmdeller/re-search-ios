@@ -10,7 +10,7 @@
 
 #import "SearchEngine.h"
 
-#import <MagicalRecord/CoreData+MagicalRecord.h>
+#import <ReSearchKit/ReSearchKit.h>
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
 {
     // Override point for customization after application launch.
     
-    [self setupCoreData];
+    [SearchData setupCoreData];
     
     return YES;
 }
@@ -57,56 +57,6 @@
 
 #pragma mark - Core Data
 
-- (void)setupCoreData
-{
-    [MagicalRecord setupAutoMigratingCoreDataStack];
-    
-    [self importSeeds];
-}
 
-- (void)importSeeds
-{
-    NSLog(@"Starting seed import");
-    
-    NSDictionary *entities = NSManagedObjectContext.MR_defaultContext.persistentStoreCoordinator.managedObjectModel.entitiesByName;
-    
-    for (NSString *entityName in entities.allKeys)
-    {
-        // Note: Add a 'Copy Files' build phase to the target in order to make sure this gets put in the right place
-        NSURL *seedURL = [NSBundle.mainBundle URLForResource:entityName withExtension:@"json" subdirectory:@"Seed Data"];
-        
-        if ([NSFileManager.defaultManager fileExistsAtPath:seedURL.path])
-        {
-            NSInputStream *fileStream = [NSInputStream inputStreamWithURL:seedURL];
-            [fileStream open];
-            
-            NSError *error = nil;
-            NSArray *data = [NSJSONSerialization JSONObjectWithStream:fileStream options:0 error:&error];
-            if (data != nil)
-            {
-                NSAssert([data isKindOfClass:NSArray.class], @"JSON must have array at root");
-                
-                NSEntityDescription *entity = entities[entityName];
-                Class recordClass = NSClassFromString(entity.managedObjectClassName);
-                
-                // Each record must have a unique primary key, and the attribute must be specified using 'relatedByAttribute' in the xcdatamodel
-                // https://github.com/magicalpanda/MagicalRecord/issues/180#issuecomment-6403926
-                [recordClass MR_importFromArray:data];
-                
-                NSLog(@"Imported %@ seeds", entityName);
-            }
-            else
-            {
-                NSLog(@"Error parsing seed data for entity: %@, error: %@", entityName, error);
-            }
-        }
-        else
-        {
-            NSLog(@"No seed data for entity: %@", entityName);
-        }
-    }
-    
-    NSLog(@"Finished seed import");
-}
 
 @end

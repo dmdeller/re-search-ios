@@ -13,6 +13,7 @@ static NSString *const kSearchQueryToken = @"🔤";
 @interface SearchDeterminator : NSObject
 
 + (NSUserDefaults *)sharedDefaults;
++ (NSURL *)sharedCoreDataStoreURL;
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL;
 
 @end
