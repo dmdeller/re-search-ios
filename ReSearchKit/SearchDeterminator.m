@@ -8,7 +8,7 @@
 
 #import "SearchDeterminator.h"
 
-static NSString *const kAppGroupID = @"group.Re-Search";
+static NSString *const kDefaultsSuiteName = @"group.Re-Search";
 
 static NSString *const kDefaultsEngineID = @"id";
 static NSString *const kDefaultsEngineDomainPart = @"domainPart";
@@ -19,15 +19,7 @@ static NSString *const kDefaultsEngineRedirectURL = @"redirectURL";
 
 + (NSUserDefaults *)sharedDefaults
 {
-    return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
-}
-
-+ (NSURL *)sharedCoreDataStoreURL
-{
-    static NSString *databaseName = @"Re-Search.sqlite";
-    NSURL *URL = [[NSFileManager.defaultManager containerURLForSecurityApplicationGroupIdentifier:kAppGroupID] URLByAppendingPathComponent:databaseName];
-    
-    return URL;
+    return [NSUserDefaults.alloc initWithSuiteName:kDefaultsSuiteName];
 }
 
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL

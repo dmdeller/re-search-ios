@@ -14,8 +14,6 @@
 		C30A265C19BCCA760079E481 /* ReSearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C30A264619BCCA760079E481 /* ReSearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C30A266719BCCB720079E481 /* SearchDeterminator.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A266519BCCB720079E481 /* SearchDeterminator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C30A266819BCCB720079E481 /* SearchDeterminator.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A266619BCCB720079E481 /* SearchDeterminator.m */; };
-		C30A266C19BCE8400079E481 /* SearchData.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A266A19BCE8400079E481 /* SearchData.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C30A266D19BCE8400079E481 /* SearchData.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A266B19BCE8400079E481 /* SearchData.m */; };
 		C3B906F0197ADCC70098712F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906EF197ADCC70098712F /* main.m */; };
 		C3B906F3197ADCC70098712F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F2197ADCC70098712F /* AppDelegate.m */; };
 		C3B906F6197ADCC70098712F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F5197ADCC70098712F /* WelcomeViewController.m */; };
@@ -144,8 +142,6 @@
 		C30A266519BCCB720079E481 /* SearchDeterminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDeterminator.h; sourceTree = "<group>"; };
 		C30A266619BCCB720079E481 /* SearchDeterminator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDeterminator.m; sourceTree = "<group>"; };
 		C30A266919BCCC8D0079E481 /* Re-Search.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Re-Search.entitlements"; sourceTree = "<group>"; };
-		C30A266A19BCE8400079E481 /* SearchData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchData.h; sourceTree = "<group>"; };
-		C30A266B19BCE8400079E481 /* SearchData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchData.m; sourceTree = "<group>"; };
 		C3B906EA197ADCC70098712F /* Re-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B906EE197ADCC70098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B906EF197ADCC70098712F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -236,8 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				C30A264A19BCCA760079E481 /* ReSearchKit.h */,
-				C30A266A19BCE8400079E481 /* SearchData.h */,
-				C30A266B19BCE8400079E481 /* SearchData.m */,
 				C30A266519BCCB720079E481 /* SearchDeterminator.h */,
 				C30A266619BCCB720079E481 /* SearchDeterminator.m */,
 				C30A264819BCCA760079E481 /* Supporting Files */,
@@ -437,7 +431,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30A266C19BCE8400079E481 /* SearchData.h in Headers */,
 				C30A266719BCCB720079E481 /* SearchDeterminator.h in Headers */,
 				C30A264B19BCCA760079E481 /* ReSearchKit.h in Headers */,
 			);
@@ -711,7 +704,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30A266819BCCB720079E481 /* SearchDeterminator.m in Sources */,
-				C30A266D19BCE8400079E481 /* SearchData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,7 +890,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -941,7 +932,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
