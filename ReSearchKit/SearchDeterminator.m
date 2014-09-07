@@ -8,7 +8,7 @@
 
 #import "SearchDeterminator.h"
 
-static NSString *const kAppGroupID = @"group.Re-Search";
+static NSString *const kAppGroupID = @"group.horizonnigh.research";
 
 static NSString *const kEngineID = @"id";
 static NSString *const kEngineDomainPart = @"domainPart";
@@ -19,12 +19,12 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 
 + (NSUserDefaults *)sharedDefaults
 {
-//    return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
+    return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
     
-    NSUserDefaults *defaults = NSUserDefaults.new;
-    [defaults addSuiteNamed:kAppGroupID];
-    
-    return defaults;
+//    NSUserDefaults *defaults = NSUserDefaults.new;
+//    [defaults addSuiteNamed:kAppGroupID];
+//    
+//    return defaults;
 }
 
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL error:(NSError **)errorRef
