@@ -10,9 +10,14 @@
 
 static NSString *const kSearchQueryToken = @"🔤";
 
+static NSString *const kDefaultsFavouriteEngineID = @"favouriteEngineID";
+static NSString *const kDefaultsAllEngines = @"allEngines";
+
+static NSString *const SearchDeterminatorErrorDomain = @"SearchDeterminatorErrorDomain";
+
 @interface SearchDeterminator : NSObject
 
 + (NSUserDefaults *)sharedDefaults;
-+ (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL;
++ (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL error:(NSError **)error;
 
 @end

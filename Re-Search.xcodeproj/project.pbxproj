@@ -1093,6 +1093,7 @@
 				C30A266019BCCA760079E481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C30A266419BCCA760079E481 /* Build configuration list for PBXNativeTarget "ReSearchKitTests" */ = {
 			isa = XCConfigurationList;
@@ -1101,6 +1102,7 @@
 				C30A266219BCCA760079E481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B906E5197ADCC60098712F /* Build configuration list for PBXProject "Re-Search" */ = {
 			isa = XCConfigurationList;

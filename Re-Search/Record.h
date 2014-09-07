@@ -10,4 +10,6 @@
 
 @interface Record : NSManagedObject
 
+- (NSDictionary *)serializedData;
+
 @end

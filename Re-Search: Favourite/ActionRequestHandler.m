@@ -76,9 +76,19 @@
     
     NSLog(@"Look it's a URL! %@", javaScriptPreprocessingResults[@"url"]);
     
-    NSURL *newURL = [SearchDeterminator redirectURLForCurrentSearchPageURL:javaScriptPreprocessingResults[@"url"]];
+    NSURL *currentURL = [NSURL URLWithString:javaScriptPreprocessingResults[@"url"]];
     
-    [self doneWithResults:@{@"newURL": newURL.absoluteString}];
+    NSError *error = nil;
+    NSURL *newURL = [SearchDeterminator redirectURLForCurrentSearchPageURL:currentURL error:&error];
+    
+    if (newURL != nil)
+    {
+        [self doneWithResults:@{@"newURL": newURL.absoluteString}];
+    }
+    else
+    {
+        [self doneWithResults:@{@"error": error.localizedDescription}];
+    }
 }
 
 - (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize

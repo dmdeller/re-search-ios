@@ -10,6 +10,7 @@
 
 #import "SearchEngine.h"
 
+#import <ReSearchKit/ReSearchKit.h>
 #import <MagicalRecord/CoreData+MagicalRecord.h>
 
 @interface AppDelegate ()
@@ -62,6 +63,7 @@
     [MagicalRecord setupAutoMigratingCoreDataStack];
     
     [self importSeeds];
+    [self exportDataToDefaults];
 }
 
 - (void)importSeeds
@@ -107,6 +109,23 @@
     }
     
     NSLog(@"Finished seed import");
+}
+
+// Yuck. This is due to not being able to get MagicalRecord (or indeed, ANY cocoapods) working with ReSearchKit.
+- (void)exportDataToDefaults
+{
+    NSArray *engines = [SearchEngine MR_findAllSortedBy:@"order" ascending:YES];
+    NSMutableArray *serializedData = [NSMutableArray arrayWithCapacity:engines.count];
+    
+    for (SearchEngine *engine in engines)
+    {
+        [serializedData addObject:engine.serializedData];
+    }
+    
+    [SearchDeterminator.sharedDefaults setObject:@"hello" forKey:@"test"];
+    [SearchDeterminator.sharedDefaults setObject:[NSArray arrayWithArray:serializedData] forKey:kDefaultsAllEngines];
+    [SearchDeterminator.sharedDefaults synchronize];
+    
 }
 
 @end
