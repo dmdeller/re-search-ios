@@ -75,7 +75,10 @@
 //    }
     
     NSLog(@"Look it's a URL! %@", javaScriptPreprocessingResults[@"url"]);
-    [self doneWithResults:@{@"newURL": @"https://duckduckgo.com"}];
+    
+    NSURL *newURL = [SearchDeterminator redirectURLForCurrentSearchPageURL:javaScriptPreprocessingResults[@"url"]];
+    
+    [self doneWithResults:@{@"newURL": newURL}];
 }
 
 - (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize

@@ -12,6 +12,8 @@
 		C30A265719BCCA760079E481 /* ReSearchKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A265619BCCA760079E481 /* ReSearchKitTests.m */; };
 		C30A265A19BCCA760079E481 /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A264619BCCA760079E481 /* ReSearchKit.framework */; };
 		C30A265C19BCCA760079E481 /* ReSearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C30A264619BCCA760079E481 /* ReSearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C30A266719BCCB720079E481 /* SearchDeterminator.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A266519BCCB720079E481 /* SearchDeterminator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30A266819BCCB720079E481 /* SearchDeterminator.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A266619BCCB720079E481 /* SearchDeterminator.m */; };
 		C3B906F0197ADCC70098712F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906EF197ADCC70098712F /* main.m */; };
 		C3B906F3197ADCC70098712F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F2197ADCC70098712F /* AppDelegate.m */; };
 		C3B906F6197ADCC70098712F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F5197ADCC70098712F /* WelcomeViewController.m */; };
@@ -137,6 +139,8 @@
 		C30A265019BCCA760079E481 /* ReSearchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSearchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30A265519BCCA760079E481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30A265619BCCA760079E481 /* ReSearchKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSearchKitTests.m; sourceTree = "<group>"; };
+		C30A266519BCCB720079E481 /* SearchDeterminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDeterminator.h; sourceTree = "<group>"; };
+		C30A266619BCCB720079E481 /* SearchDeterminator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDeterminator.m; sourceTree = "<group>"; };
 		C3B906EA197ADCC70098712F /* Re-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B906EE197ADCC70098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B906EF197ADCC70098712F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				C30A264A19BCCA760079E481 /* ReSearchKit.h */,
+				C30A266519BCCB720079E481 /* SearchDeterminator.h */,
+				C30A266619BCCB720079E481 /* SearchDeterminator.m */,
 				C30A264819BCCA760079E481 /* Supporting Files */,
 			);
 			path = ReSearchKit;
@@ -423,6 +429,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30A266719BCCB720079E481 /* SearchDeterminator.h in Headers */,
 				C30A264B19BCCA760079E481 /* ReSearchKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,6 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30A266819BCCB720079E481 /* SearchDeterminator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +807,7 @@
 		C30A265F19BCCA760079E481 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -821,6 +830,7 @@
 		C30A266019BCCA760079E481 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
