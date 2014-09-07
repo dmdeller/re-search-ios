@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *const kSearchQueryToken = @"🔤";
+
 @interface SearchDeterminator : NSObject
 
++ (NSUserDefaults *)sharedDefaults;
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL;
 
 @end

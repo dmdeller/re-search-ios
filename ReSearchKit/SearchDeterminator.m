@@ -8,11 +8,23 @@
 
 #import "SearchDeterminator.h"
 
+static NSString *const kDefaultsSuiteName = @"group.Re-Search";
+
+static NSString *const kDefaultsEngineID = @"id";
+static NSString *const kDefaultsEngineDomainPart = @"domainPart";
+static NSString *const kDefaultsEngineQueryPart = @"queryPart";
+static NSString *const kDefaultsEngineRedirectURL = @"redirectURL";
+
 @implementation SearchDeterminator
+
++ (NSUserDefaults *)sharedDefaults
+{
+    return [NSUserDefaults.alloc initWithSuiteName:kDefaultsSuiteName];
+}
 
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL
 {
-    return @"https://duckduckgo.com";
+    return [NSURL URLWithString:@"https://duckduckgo.com"];
 }
 
 @end

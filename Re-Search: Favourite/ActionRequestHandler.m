@@ -78,7 +78,7 @@
     
     NSURL *newURL = [SearchDeterminator redirectURLForCurrentSearchPageURL:javaScriptPreprocessingResults[@"url"]];
     
-    [self doneWithResults:@{@"newURL": newURL}];
+    [self doneWithResults:@{@"newURL": newURL.absoluteString}];
 }
 
 - (void)doneWithResults:(NSDictionary *)resultsForJavaScriptFinalize
