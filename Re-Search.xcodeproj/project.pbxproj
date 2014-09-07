@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BC361BD46E394A8CB9BA8D39 /* libPods-Re-Search.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8530C2DFCD9C4E3886C4A239 /* libPods-Re-Search.a */; };
-		C30A262319BCC7560079E481 /* Re-SearchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A262219BCC7560079E481 /* Re-SearchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C30A262F19BCC7560079E481 /* Re_SearchKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30A262E19BCC7560079E481 /* Re_SearchKitTests.m */; };
-		C30A263219BCC7560079E481 /* Re-SearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30A261E19BCC7560079E481 /* Re-SearchKit.framework */; };
-		C30A263319BCC7560079E481 /* Re-SearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C30A261E19BCC7560079E481 /* Re-SearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3B906F0197ADCC70098712F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906EF197ADCC70098712F /* main.m */; };
 		C3B906F3197ADCC70098712F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F2197ADCC70098712F /* AppDelegate.m */; };
 		C3B906F6197ADCC70098712F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B906F5197ADCC70098712F /* WelcomeViewController.m */; };
@@ -35,27 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C30A262919BCC7560079E481 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3B906E9197ADCC70098712F;
-			remoteInfo = "Re-Search";
-		};
-		C30A263019BCC7560079E481 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C30A261D19BCC7560079E481;
-			remoteInfo = "Re-SearchKit";
-		};
-		C30A263419BCC7560079E481 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C30A261D19BCC7560079E481;
-			remoteInfo = "Re-SearchKit";
-		};
 		C3B90704197ADCC70098712F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
@@ -94,17 +69,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C30A263B19BCC7560079E481 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C30A263319BCC7560079E481 /* Re-SearchKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3B90764197AFF0F0098712F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,12 +95,6 @@
 
 /* Begin PBXFileReference section */
 		8530C2DFCD9C4E3886C4A239 /* libPods-Re-Search.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Re-Search.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30A261E19BCC7560079E481 /* Re-SearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Re-SearchKit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30A262119BCC7560079E481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C30A262219BCC7560079E481 /* Re-SearchKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Re-SearchKit.h"; sourceTree = "<group>"; };
-		C30A262819BCC7560079E481 /* Re-SearchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Re-SearchKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30A262D19BCC7560079E481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C30A262E19BCC7560079E481 /* Re_SearchKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Re_SearchKitTests.m; sourceTree = "<group>"; };
 		C3B906EA197ADCC70098712F /* Re-Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Re-Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B906EE197ADCC70098712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B906EF197ADCC70098712F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -176,25 +134,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C30A261A19BCC7560079E481 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30A262519BCC7560079E481 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3B906E7197ADCC70098712F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30A263219BCC7560079E481 /* Re-SearchKit.framework in Frameworks */,
 				BC361BD46E394A8CB9BA8D39 /* libPods-Re-Search.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,40 +166,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C30A261F19BCC7560079E481 /* Re-SearchKit */ = {
-			isa = PBXGroup;
-			children = (
-				C30A262219BCC7560079E481 /* Re-SearchKit.h */,
-				C30A262019BCC7560079E481 /* Supporting Files */,
-			);
-			path = "Re-SearchKit";
-			sourceTree = "<group>";
-		};
-		C30A262019BCC7560079E481 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C30A262119BCC7560079E481 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C30A262B19BCC7560079E481 /* Re-SearchKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				C30A262E19BCC7560079E481 /* Re_SearchKitTests.m */,
-				C30A262C19BCC7560079E481 /* Supporting Files */,
-			);
-			path = "Re-SearchKitTests";
-			sourceTree = "<group>";
-		};
-		C30A262C19BCC7560079E481 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C30A262D19BCC7560079E481 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C3B906E1197ADCC60098712F = {
 			isa = PBXGroup;
 			children = (
@@ -264,8 +173,6 @@
 				C3B90706197ADCC70098712F /* Re-SearchTests */,
 				C3B9076C197B0A950098712F /* Re-Search: Favourite */,
 				C3B90782197B0AA70098712F /* Re-Search: Choose */,
-				C30A261F19BCC7560079E481 /* Re-SearchKit */,
-				C30A262B19BCC7560079E481 /* Re-SearchKitTests */,
 				C3B906EB197ADCC70098712F /* Products */,
 				CEBF8C9676E24178A543322A /* Pods-Re-Search.xcconfig */,
 				D418520BD9BF4A5E8FC00687 /* Frameworks */,
@@ -279,8 +186,6 @@
 				C3B90703197ADCC70098712F /* Re-SearchTests.xctest */,
 				C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */,
 				C3B90781197B0AA70098712F /* Re-Search: Choose.appex */,
-				C30A261E19BCC7560079E481 /* Re-SearchKit.framework */,
-				C30A262819BCC7560079E481 /* Re-SearchKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -418,54 +323,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C30A261B19BCC7560079E481 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C30A262319BCC7560079E481 /* Re-SearchKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		C30A261D19BCC7560079E481 /* Re-SearchKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C30A263A19BCC7560079E481 /* Build configuration list for PBXNativeTarget "Re-SearchKit" */;
-			buildPhases = (
-				C30A261919BCC7560079E481 /* Sources */,
-				C30A261A19BCC7560079E481 /* Frameworks */,
-				C30A261B19BCC7560079E481 /* Headers */,
-				C30A261C19BCC7560079E481 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Re-SearchKit";
-			productName = "Re-SearchKit";
-			productReference = C30A261E19BCC7560079E481 /* Re-SearchKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C30A262719BCC7560079E481 /* Re-SearchKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C30A263C19BCC7560079E481 /* Build configuration list for PBXNativeTarget "Re-SearchKitTests" */;
-			buildPhases = (
-				C30A262419BCC7560079E481 /* Sources */,
-				C30A262519BCC7560079E481 /* Frameworks */,
-				C30A262619BCC7560079E481 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C30A262A19BCC7560079E481 /* PBXTargetDependency */,
-			);
-			name = "Re-SearchKitTests";
-			productName = "Re-SearchKitTests";
-			productReference = C30A262819BCC7560079E481 /* Re-SearchKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		C3B906E9197ADCC70098712F /* Re-Search */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B9070D197ADCC70098712F /* Build configuration list for PBXNativeTarget "Re-Search" */;
@@ -477,7 +335,6 @@
 				B63874885B724A13AD15ABA6 /* Copy Pods Resources */,
 				C3B90764197AFF0F0098712F /* CopyFiles */,
 				C3B90776197B0A950098712F /* Embed App Extensions */,
-				C30A263B19BCC7560079E481 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -486,8 +343,6 @@
 				C3B90779197B0A950098712F /* PBXTargetDependency */,
 				C3B9078B197B0AA70098712F /* PBXTargetDependency */,
 				C3B9078E197B0AA70098712F /* PBXTargetDependency */,
-				C30A263119BCC7560079E481 /* PBXTargetDependency */,
-				C30A263519BCC7560079E481 /* PBXTargetDependency */,
 			);
 			name = "Re-Search";
 			productName = "Re-Search";
@@ -555,13 +410,6 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "David Deller";
 				TargetAttributes = {
-					C30A261D19BCC7560079E481 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					C30A262719BCC7560079E481 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = C3B906E9197ADCC70098712F;
-					};
 					C3B906E9197ADCC70098712F = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -594,27 +442,11 @@
 				C3B90702197ADCC70098712F /* Re-SearchTests */,
 				C3B9076A197B0A950098712F /* Re-Search: Favourite */,
 				C3B90780197B0AA70098712F /* Re-Search: Choose */,
-				C30A261D19BCC7560079E481 /* Re-SearchKit */,
-				C30A262719BCC7560079E481 /* Re-SearchKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C30A261C19BCC7560079E481 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30A262619BCC7560079E481 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3B906E8197ADCC70098712F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,21 +516,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C30A261919BCC7560079E481 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C30A262419BCC7560079E481 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C30A262F19BCC7560079E481 /* Re_SearchKitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3B906E6197ADCC70098712F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -742,21 +559,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C30A262A19BCC7560079E481 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3B906E9197ADCC70098712F /* Re-Search */;
-			targetProxy = C30A262919BCC7560079E481 /* PBXContainerItemProxy */;
-		};
-		C30A263119BCC7560079E481 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C30A261D19BCC7560079E481 /* Re-SearchKit */;
-			targetProxy = C30A263019BCC7560079E481 /* PBXContainerItemProxy */;
-		};
-		C30A263519BCC7560079E481 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C30A261D19BCC7560079E481 /* Re-SearchKit */;
-			targetProxy = C30A263419BCC7560079E481 /* PBXContainerItemProxy */;
-		};
 		C3B90705197ADCC70098712F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C3B906E9197ADCC70098712F /* Re-Search */;
@@ -796,78 +598,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C30A263619BCC7560079E481 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Re-SearchKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C30A263719BCC7560079E481 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Re-SearchKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C30A263819BCC7560079E481 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Re-SearchKitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Re-Search.app/Re-Search";
-			};
-			name = Debug;
-		};
-		C30A263919BCC7560079E481 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Re-SearchKitTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Re-Search.app/Re-Search";
-			};
-			name = Release;
-		};
 		C3B9070B197ADCC70098712F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1060,22 +790,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C30A263A19BCC7560079E481 /* Build configuration list for PBXNativeTarget "Re-SearchKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C30A263619BCC7560079E481 /* Debug */,
-				C30A263719BCC7560079E481 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C30A263C19BCC7560079E481 /* Build configuration list for PBXNativeTarget "Re-SearchKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C30A263819BCC7560079E481 /* Debug */,
-				C30A263919BCC7560079E481 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		C3B906E5197ADCC60098712F /* Build configuration list for PBXProject "Re-Search" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
