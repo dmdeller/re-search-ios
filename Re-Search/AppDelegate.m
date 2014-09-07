@@ -61,10 +61,7 @@
 {
     [MagicalRecord setupAutoMigratingCoreDataStack];
     
-    if (SearchEngine.MR_countOfEntities == 0)
-    {
-        [self importSeeds];
-    }
+    [self importSeeds];
 }
 
 - (void)importSeeds

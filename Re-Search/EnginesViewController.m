@@ -60,7 +60,7 @@
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kCellID forIndexPath:indexPath];
     
     cell.textLabel.text = searchEngine.name;
-    cell.detailTextLabel.text = searchEngine.urlPattern;
+    cell.detailTextLabel.text = searchEngine.redirectURL;
     
     return cell;
 }

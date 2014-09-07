@@ -4,10 +4,18 @@
 #import "_SearchEngine.h"
 
 const struct SearchEngineAttributes SearchEngineAttributes = {
+	.domainPart = @"domainPart",
 	.icon = @"icon",
+	.id = @"id",
+	.mutable = @"mutable",
 	.name = @"name",
 	.order = @"order",
-	.urlPattern = @"urlPattern",
+	.queryPart = @"queryPart",
+	.redirectURL = @"redirectURL",
+};
+
+const struct SearchEngineUserInfo SearchEngineUserInfo = {
+	.relatedByAttribute = @"id",
 };
 
 @implementation SearchEngineID
@@ -36,6 +44,11 @@ const struct SearchEngineAttributes SearchEngineAttributes = {
 + (NSSet*)keyPathsForValuesAffectingValueForKey:(NSString*)key {
 	NSSet *keyPaths = [super keyPathsForValuesAffectingValueForKey:key];
 
+	if ([key isEqualToString:@"mutableValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"mutable"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
 	if ([key isEqualToString:@"orderValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"order"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
@@ -45,7 +58,31 @@ const struct SearchEngineAttributes SearchEngineAttributes = {
 	return keyPaths;
 }
 
+@dynamic domainPart;
+
 @dynamic icon;
+
+@dynamic id;
+
+@dynamic mutable;
+
+- (BOOL)mutableValue {
+	NSNumber *result = [self mutable];
+	return [result boolValue];
+}
+
+- (void)setMutableValue:(BOOL)value_ {
+	[self setMutable:@(value_)];
+}
+
+- (BOOL)primitiveMutableValue {
+	NSNumber *result = [self primitiveMutable];
+	return [result boolValue];
+}
+
+- (void)setPrimitiveMutableValue:(BOOL)value_ {
+	[self setPrimitiveMutable:@(value_)];
+}
 
 @dynamic name;
 
@@ -69,7 +106,9 @@ const struct SearchEngineAttributes SearchEngineAttributes = {
 	[self setPrimitiveOrder:@(value_)];
 }
 
-@dynamic urlPattern;
+@dynamic queryPart;
+
+@dynamic redirectURL;
 
 @end
 
