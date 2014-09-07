@@ -19,7 +19,12 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 
 + (NSUserDefaults *)sharedDefaults
 {
-    return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
+//    return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
+    
+    NSUserDefaults *defaults = NSUserDefaults.new;
+    [defaults addSuiteNamed:kAppGroupID];
+    
+    return defaults;
 }
 
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL error:(NSError **)errorRef
