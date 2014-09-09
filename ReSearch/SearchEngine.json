@@ -41,7 +41,7 @@
         "order": 4,
         "domainPart": "startpage.com",
         "queryPart": "query=🔤",
-        "redirectURL": "https://startpage.com/do/search?query=🔤",
+        "redirectURL": "https://startpage.com/do/m/mobilesearch?query=🔤",
         "mutable": false
     },
     {
