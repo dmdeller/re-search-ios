@@ -286,7 +286,6 @@
 		C3B906EC197ADCC70098712F /* Re-Search */ = {
 			isa = PBXGroup;
 			children = (
-				C30A266919BCCC8D0079E481 /* Re-Search.entitlements */,
 				C3B906F1197ADCC70098712F /* AppDelegate.h */,
 				C3B906F2197ADCC70098712F /* AppDelegate.m */,
 				C3B9074B197AE29E0098712F /* View Controllers */,
@@ -302,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				C3B906EE197ADCC70098712F /* Info.plist */,
+				C30A266919BCCC8D0079E481 /* Re-Search.entitlements */,
 				C3B906EF197ADCC70098712F /* main.m */,
 			);
 			name = "Supporting Files";
