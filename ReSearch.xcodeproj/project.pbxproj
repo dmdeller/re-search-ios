@@ -1,0 +1,1191 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49D4B558CAE94563B5FEBAE1 /* libPods-ReSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F02F4F1184D4A9BFBE1F5 /* libPods-ReSearch.a */; };
+		C3914AC819BFB06B008A4679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914AC719BFB06B008A4679 /* main.m */; };
+		C3914AD619BFB06B008A4679 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3914AD519BFB06B008A4679 /* Images.xcassets */; };
+		C3914AD919BFB06B008A4679 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3914AD719BFB06B008A4679 /* LaunchScreen.xib */; };
+		C3914AE519BFB06B008A4679 /* ReSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914AE419BFB06B008A4679 /* ReSearchTests.m */; };
+		C3914AFD19BFB0A2008A4679 /* ReSearch Favourite.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3914B0E19BFB0B8008A4679 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B0D19BFB0B8008A4679 /* ActionViewController.m */; };
+		C3914B1019BFB0B8008A4679 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3914B0F19BFB0B8008A4679 /* MainInterface.storyboard */; };
+		C3914B1319BFB0B8008A4679 /* ReSearch Choose.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C3914B2F19BFB0C5008A4679 /* ReSearchKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B2E19BFB0C5008A4679 /* ReSearchKitTests.m */; };
+		C3914B3219BFB0C5008A4679 /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
+		C3914B3319BFB0C5008A4679 /* ReSearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3914B3F19BFB17F008A4679 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B3E19BFB17F008A4679 /* AppDelegate.m */; };
+		C3914B4719BFB193008A4679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3914B4019BFB193008A4679 /* Main.storyboard */; };
+		C3914B4819BFB193008A4679 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B4219BFB193008A4679 /* WelcomeViewController.m */; };
+		C3914B4919BFB193008A4679 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B4419BFB193008A4679 /* SearchViewController.m */; };
+		C3914B4A19BFB193008A4679 /* EnginesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B4619BFB193008A4679 /* EnginesViewController.m */; };
+		C3914B5419BFB1B2008A4679 /* _SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B4E19BFB1B2008A4679 /* _SearchEngine.m */; };
+		C3914B5519BFB1B2008A4679 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B5019BFB1B2008A4679 /* Record.m */; };
+		C3914B5619BFB1B2008A4679 /* SearchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B5219BFB1B2008A4679 /* SearchEngine.m */; };
+		C3914B5B19BFB1D6008A4679 /* ReSearchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C3914B5819BFB1D6008A4679 /* ReSearchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3914B5C19BFB1D6008A4679 /* SearchDeterminator.h in Headers */ = {isa = PBXBuildFile; fileRef = C3914B5919BFB1D6008A4679 /* SearchDeterminator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3914B5D19BFB1D6008A4679 /* SearchDeterminator.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B5A19BFB1D6008A4679 /* SearchDeterminator.m */; };
+		C3914B6119BFB1E6008A4679 /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B5F19BFB1E6008A4679 /* ActionRequestHandler.m */; };
+		C3914B6219BFB1E6008A4679 /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = C3914B6019BFB1E6008A4679 /* Action.js */; };
+		C3ADA8EA19BFB28E00546E0D /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
+		C3ADA8ED19BFBB0B00546E0D /* SearchEngine.json in Resources */ = {isa = PBXBuildFile; fileRef = C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */; };
+		C3ADA8F119BFBB5A00546E0D /* SearchEngine.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */; };
+		C3ADA8F419BFBDB300546E0D /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
+		C3ADA8F719BFC04300546E0D /* ReSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA8F519BFC04300546E0D /* ReSearch.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3914ADF19BFB06B008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914AC119BFB06B008A4679;
+			remoteInfo = ReSearch;
+		};
+		C3914AFB19BFB0A1008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914AF119BFB0A1008A4679;
+			remoteInfo = "ReSearch Favourite";
+		};
+		C3914AFE19BFB0A2008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914AF119BFB0A1008A4679;
+			remoteInfo = "ReSearch Favourite";
+		};
+		C3914B1119BFB0B8008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914B0719BFB0B8008A4679;
+			remoteInfo = "ReSearch Choose";
+		};
+		C3914B1419BFB0B8008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914B0719BFB0B8008A4679;
+			remoteInfo = "ReSearch Choose";
+		};
+		C3914B2919BFB0C5008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914AC119BFB06B008A4679;
+			remoteInfo = ReSearch;
+		};
+		C3914B3019BFB0C5008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914B1D19BFB0C5008A4679;
+			remoteInfo = ReSearchKit;
+		};
+		C3914B3419BFB0C5008A4679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3914B1D19BFB0C5008A4679;
+			remoteInfo = ReSearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3914B0319BFB0A2008A4679 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C3914AFD19BFB0A2008A4679 /* ReSearch Favourite.appex in Embed App Extensions */,
+				C3914B1319BFB0B8008A4679 /* ReSearch Choose.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B3919BFB0C5008A4679 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3914B3319BFB0C5008A4679 /* ReSearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3ADA8EE19BFBB2800546E0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "Seed Data";
+			dstSubfolderSpec = 7;
+			files = (
+				C3ADA8F119BFBB5A00546E0D /* SearchEngine.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A5F02F4F1184D4A9BFBE1F5 /* libPods-ReSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E9633F08248DD847DB954 /* Pods-ReSearch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSearch.xcconfig"; path = "Pods/Pods-ReSearch.xcconfig"; sourceTree = "<group>"; };
+		C3914AC219BFB06B008A4679 /* ReSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914AC619BFB06B008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914AC719BFB06B008A4679 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3914AD519BFB06B008A4679 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3914AD819BFB06B008A4679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C3914ADE19BFB06B008A4679 /* ReSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914AE319BFB06B008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914AE419BFB06B008A4679 /* ReSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSearchTests.m; sourceTree = "<group>"; };
+		C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReSearch Favourite.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914AF519BFB0A1008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReSearch Choose.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914B0B19BFB0B8008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914B0C19BFB0B8008A4679 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		C3914B0D19BFB0B8008A4679 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		C3914B0F19BFB0B8008A4679 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReSearchKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914B2119BFB0C5008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914B2819BFB0C5008A4679 /* ReSearchKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSearchKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3914B2D19BFB0C5008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3914B2E19BFB0C5008A4679 /* ReSearchKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSearchKitTests.m; sourceTree = "<group>"; };
+		C3914B3D19BFB17F008A4679 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		C3914B3E19BFB17F008A4679 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
+		C3914B4019BFB193008A4679 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3914B4119BFB193008A4679 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		C3914B4219BFB193008A4679 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		C3914B4319BFB193008A4679 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		C3914B4419BFB193008A4679 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		C3914B4519BFB193008A4679 /* EnginesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnginesViewController.h; sourceTree = "<group>"; };
+		C3914B4619BFB193008A4679 /* EnginesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnginesViewController.m; sourceTree = "<group>"; };
+		C3914B4D19BFB1B2008A4679 /* _SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _SearchEngine.h; sourceTree = "<group>"; };
+		C3914B4E19BFB1B2008A4679 /* _SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _SearchEngine.m; sourceTree = "<group>"; };
+		C3914B4F19BFB1B2008A4679 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		C3914B5019BFB1B2008A4679 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		C3914B5119BFB1B2008A4679 /* SearchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchEngine.h; sourceTree = "<group>"; };
+		C3914B5219BFB1B2008A4679 /* SearchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchEngine.m; sourceTree = "<group>"; };
+		C3914B5819BFB1D6008A4679 /* ReSearchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReSearchKit.h; sourceTree = "<group>"; };
+		C3914B5919BFB1D6008A4679 /* SearchDeterminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDeterminator.h; sourceTree = "<group>"; };
+		C3914B5A19BFB1D6008A4679 /* SearchDeterminator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDeterminator.m; sourceTree = "<group>"; };
+		C3914B5E19BFB1E6008A4679 /* ActionRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
+		C3914B5F19BFB1E6008A4679 /* ActionRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
+		C3914B6019BFB1E6008A4679 /* Action.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		C3ADA8EB19BFB8B500546E0D /* ReSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ReSearch.entitlements; sourceTree = "<group>"; };
+		C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SearchEngine.json; sourceTree = "<group>"; };
+		C3ADA8F219BFBD8200546E0D /* ReSearch Favourite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ReSearch Favourite.entitlements"; sourceTree = "<group>"; };
+		C3ADA8F319BFBDA100546E0D /* ReSearch Choose.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ReSearch Choose.entitlements"; sourceTree = "<group>"; };
+		C3ADA8F619BFC04300546E0D /* ReSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReSearch.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3914ABF19BFB06B008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B3219BFB0C5008A4679 /* ReSearchKit.framework in Frameworks */,
+				49D4B558CAE94563B5FEBAE1 /* libPods-ReSearch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914ADB19BFB06B008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914AEF19BFB0A1008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3ADA8EA19BFB28E00546E0D /* ReSearchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B0519BFB0B8008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3ADA8F419BFBDB300546E0D /* ReSearchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B1A19BFB0C5008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B2519BFB0C5008A4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3914AB919BFB06B008A4679 = {
+			isa = PBXGroup;
+			children = (
+				C3914AC419BFB06B008A4679 /* ReSearch */,
+				C3914AE119BFB06B008A4679 /* ReSearchTests */,
+				C3914AF319BFB0A1008A4679 /* ReSearch Favourite */,
+				C3914B0919BFB0B8008A4679 /* ReSearch Choose */,
+				C3914B1F19BFB0C5008A4679 /* ReSearchKit */,
+				C3914B2B19BFB0C5008A4679 /* ReSearchKitTests */,
+				C3914AC319BFB06B008A4679 /* Products */,
+				3B2E9633F08248DD847DB954 /* Pods-ReSearch.xcconfig */,
+				E9D3EBAFDB694F16AB9A756B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C3914AC319BFB06B008A4679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3914AC219BFB06B008A4679 /* ReSearch.app */,
+				C3914ADE19BFB06B008A4679 /* ReSearchTests.xctest */,
+				C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */,
+				C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */,
+				C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */,
+				C3914B2819BFB0C5008A4679 /* ReSearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3914AC419BFB06B008A4679 /* ReSearch */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B3D19BFB17F008A4679 /* AppDelegate.h */,
+				C3914B3E19BFB17F008A4679 /* AppDelegate.m */,
+				C3914B4B19BFB197008A4679 /* View Controllers */,
+				C3914B5719BFB1B8008A4679 /* Data Model */,
+				C3ADA8F019BFBB4100546E0D /* Seed Data */,
+				C3914AD519BFB06B008A4679 /* Images.xcassets */,
+				C3914AD719BFB06B008A4679 /* LaunchScreen.xib */,
+				C3914AC519BFB06B008A4679 /* Supporting Files */,
+			);
+			path = ReSearch;
+			sourceTree = "<group>";
+		};
+		C3914AC519BFB06B008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA8EB19BFB8B500546E0D /* ReSearch.entitlements */,
+				C3914AC619BFB06B008A4679 /* Info.plist */,
+				C3914AC719BFB06B008A4679 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914AE119BFB06B008A4679 /* ReSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3914AE419BFB06B008A4679 /* ReSearchTests.m */,
+				C3914AE219BFB06B008A4679 /* Supporting Files */,
+			);
+			path = ReSearchTests;
+			sourceTree = "<group>";
+		};
+		C3914AE219BFB06B008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3914AE319BFB06B008A4679 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914AF319BFB0A1008A4679 /* ReSearch Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B5E19BFB1E6008A4679 /* ActionRequestHandler.h */,
+				C3914B5F19BFB1E6008A4679 /* ActionRequestHandler.m */,
+				C3914B6019BFB1E6008A4679 /* Action.js */,
+				C3914AF419BFB0A1008A4679 /* Supporting Files */,
+			);
+			path = "ReSearch Favourite";
+			sourceTree = "<group>";
+		};
+		C3914AF419BFB0A1008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA8F219BFBD8200546E0D /* ReSearch Favourite.entitlements */,
+				C3914AF519BFB0A1008A4679 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914B0919BFB0B8008A4679 /* ReSearch Choose */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B0C19BFB0B8008A4679 /* ActionViewController.h */,
+				C3914B0D19BFB0B8008A4679 /* ActionViewController.m */,
+				C3914B0F19BFB0B8008A4679 /* MainInterface.storyboard */,
+				C3914B0A19BFB0B8008A4679 /* Supporting Files */,
+			);
+			path = "ReSearch Choose";
+			sourceTree = "<group>";
+		};
+		C3914B0A19BFB0B8008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA8F319BFBDA100546E0D /* ReSearch Choose.entitlements */,
+				C3914B0B19BFB0B8008A4679 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914B1F19BFB0C5008A4679 /* ReSearchKit */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B5819BFB1D6008A4679 /* ReSearchKit.h */,
+				C3914B5919BFB1D6008A4679 /* SearchDeterminator.h */,
+				C3914B5A19BFB1D6008A4679 /* SearchDeterminator.m */,
+				C3914B2019BFB0C5008A4679 /* Supporting Files */,
+			);
+			path = ReSearchKit;
+			sourceTree = "<group>";
+		};
+		C3914B2019BFB0C5008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B2119BFB0C5008A4679 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914B2B19BFB0C5008A4679 /* ReSearchKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B2E19BFB0C5008A4679 /* ReSearchKitTests.m */,
+				C3914B2C19BFB0C5008A4679 /* Supporting Files */,
+			);
+			path = ReSearchKitTests;
+			sourceTree = "<group>";
+		};
+		C3914B2C19BFB0C5008A4679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B2D19BFB0C5008A4679 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3914B4B19BFB197008A4679 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3914B4019BFB193008A4679 /* Main.storyboard */,
+				C3914B4119BFB193008A4679 /* WelcomeViewController.h */,
+				C3914B4219BFB193008A4679 /* WelcomeViewController.m */,
+				C3914B4319BFB193008A4679 /* SearchViewController.h */,
+				C3914B4419BFB193008A4679 /* SearchViewController.m */,
+				C3914B4519BFB193008A4679 /* EnginesViewController.h */,
+				C3914B4619BFB193008A4679 /* EnginesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3914B5719BFB1B8008A4679 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA8F519BFC04300546E0D /* ReSearch.xcdatamodeld */,
+				C3914B4D19BFB1B2008A4679 /* _SearchEngine.h */,
+				C3914B4E19BFB1B2008A4679 /* _SearchEngine.m */,
+				C3914B4F19BFB1B2008A4679 /* Record.h */,
+				C3914B5019BFB1B2008A4679 /* Record.m */,
+				C3914B5119BFB1B2008A4679 /* SearchEngine.h */,
+				C3914B5219BFB1B2008A4679 /* SearchEngine.m */,
+			);
+			name = "Data Model";
+			sourceTree = "<group>";
+		};
+		C3ADA8F019BFBB4100546E0D /* Seed Data */ = {
+			isa = PBXGroup;
+			children = (
+				C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */,
+			);
+			name = "Seed Data";
+			sourceTree = "<group>";
+		};
+		E9D3EBAFDB694F16AB9A756B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F02F4F1184D4A9BFBE1F5 /* libPods-ReSearch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C3914B1B19BFB0C5008A4679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B5C19BFB1D6008A4679 /* SearchDeterminator.h in Headers */,
+				C3914B5B19BFB1D6008A4679 /* ReSearchKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C3914AC119BFB06B008A4679 /* ReSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914AE819BFB06B008A4679 /* Build configuration list for PBXNativeTarget "ReSearch" */;
+			buildPhases = (
+				15461CFFCF964002B6EC71C3 /* Check Pods Manifest.lock */,
+				C3914ABE19BFB06B008A4679 /* Sources */,
+				C3914ABF19BFB06B008A4679 /* Frameworks */,
+				C3914AC019BFB06B008A4679 /* Resources */,
+				C3914B0319BFB0A2008A4679 /* Embed App Extensions */,
+				C3914B3919BFB0C5008A4679 /* Embed Frameworks */,
+				34C8ACF099A14DC190891130 /* Copy Pods Resources */,
+				C3ADA8EE19BFBB2800546E0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3914AFC19BFB0A1008A4679 /* PBXTargetDependency */,
+				C3914AFF19BFB0A2008A4679 /* PBXTargetDependency */,
+				C3914B1219BFB0B8008A4679 /* PBXTargetDependency */,
+				C3914B1519BFB0B8008A4679 /* PBXTargetDependency */,
+				C3914B3119BFB0C5008A4679 /* PBXTargetDependency */,
+				C3914B3519BFB0C5008A4679 /* PBXTargetDependency */,
+			);
+			name = ReSearch;
+			productName = ReSearch;
+			productReference = C3914AC219BFB06B008A4679 /* ReSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3914ADD19BFB06B008A4679 /* ReSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914AEB19BFB06B008A4679 /* Build configuration list for PBXNativeTarget "ReSearchTests" */;
+			buildPhases = (
+				C3914ADA19BFB06B008A4679 /* Sources */,
+				C3914ADB19BFB06B008A4679 /* Frameworks */,
+				C3914ADC19BFB06B008A4679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3914AE019BFB06B008A4679 /* PBXTargetDependency */,
+			);
+			name = ReSearchTests;
+			productName = ReSearchTests;
+			productReference = C3914ADE19BFB06B008A4679 /* ReSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3914AF119BFB0A1008A4679 /* ReSearch Favourite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914B0019BFB0A2008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Favourite" */;
+			buildPhases = (
+				C3914AEE19BFB0A1008A4679 /* Sources */,
+				C3914AEF19BFB0A1008A4679 /* Frameworks */,
+				C3914AF019BFB0A1008A4679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReSearch Favourite";
+			productName = "ReSearch Favourite";
+			productReference = C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C3914B0719BFB0B8008A4679 /* ReSearch Choose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914B1619BFB0B8008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Choose" */;
+			buildPhases = (
+				C3914B0419BFB0B8008A4679 /* Sources */,
+				C3914B0519BFB0B8008A4679 /* Frameworks */,
+				C3914B0619BFB0B8008A4679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReSearch Choose";
+			productName = "ReSearch Choose";
+			productReference = C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C3914B1D19BFB0C5008A4679 /* ReSearchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914B3619BFB0C5008A4679 /* Build configuration list for PBXNativeTarget "ReSearchKit" */;
+			buildPhases = (
+				C3914B1919BFB0C5008A4679 /* Sources */,
+				C3914B1A19BFB0C5008A4679 /* Frameworks */,
+				C3914B1B19BFB0C5008A4679 /* Headers */,
+				C3914B1C19BFB0C5008A4679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReSearchKit;
+			productName = ReSearchKit;
+			productReference = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3914B2719BFB0C5008A4679 /* ReSearchKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3914B3A19BFB0C5008A4679 /* Build configuration list for PBXNativeTarget "ReSearchKitTests" */;
+			buildPhases = (
+				C3914B2419BFB0C5008A4679 /* Sources */,
+				C3914B2519BFB0C5008A4679 /* Frameworks */,
+				C3914B2619BFB0C5008A4679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3914B2A19BFB0C5008A4679 /* PBXTargetDependency */,
+			);
+			name = ReSearchKitTests;
+			productName = ReSearchKitTests;
+			productReference = C3914B2819BFB0C5008A4679 /* ReSearchKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3914ABA19BFB06B008A4679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "David Deller";
+				TargetAttributes = {
+					C3914AC119BFB06B008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 2ZS98V3L3J;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C3914ADD19BFB06B008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C3914AC119BFB06B008A4679;
+					};
+					C3914AF119BFB0A1008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 2ZS98V3L3J;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C3914B0719BFB0B8008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 2ZS98V3L3J;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C3914B1D19BFB0C5008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C3914B2719BFB0C5008A4679 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C3914AC119BFB06B008A4679;
+					};
+				};
+			};
+			buildConfigurationList = C3914ABD19BFB06B008A4679 /* Build configuration list for PBXProject "ReSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3914AB919BFB06B008A4679;
+			productRefGroup = C3914AC319BFB06B008A4679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3914AC119BFB06B008A4679 /* ReSearch */,
+				C3914ADD19BFB06B008A4679 /* ReSearchTests */,
+				C3914AF119BFB0A1008A4679 /* ReSearch Favourite */,
+				C3914B0719BFB0B8008A4679 /* ReSearch Choose */,
+				C3914B1D19BFB0C5008A4679 /* ReSearchKit */,
+				C3914B2719BFB0C5008A4679 /* ReSearchKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3914AC019BFB06B008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B4719BFB193008A4679 /* Main.storyboard in Resources */,
+				C3ADA8ED19BFBB0B00546E0D /* SearchEngine.json in Resources */,
+				C3914AD919BFB06B008A4679 /* LaunchScreen.xib in Resources */,
+				C3914AD619BFB06B008A4679 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914ADC19BFB06B008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914AF019BFB0A1008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B6219BFB1E6008A4679 /* Action.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B0619BFB0B8008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B1019BFB0B8008A4679 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B1C19BFB0C5008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B2619BFB0C5008A4679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15461CFFCF964002B6EC71C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34C8ACF099A14DC190891130 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ReSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3914ABE19BFB06B008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B3F19BFB17F008A4679 /* AppDelegate.m in Sources */,
+				C3914B5519BFB1B2008A4679 /* Record.m in Sources */,
+				C3914AC819BFB06B008A4679 /* main.m in Sources */,
+				C3914B4919BFB193008A4679 /* SearchViewController.m in Sources */,
+				C3914B5419BFB1B2008A4679 /* _SearchEngine.m in Sources */,
+				C3914B5619BFB1B2008A4679 /* SearchEngine.m in Sources */,
+				C3ADA8F719BFC04300546E0D /* ReSearch.xcdatamodeld in Sources */,
+				C3914B4A19BFB193008A4679 /* EnginesViewController.m in Sources */,
+				C3914B4819BFB193008A4679 /* WelcomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914ADA19BFB06B008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914AE519BFB06B008A4679 /* ReSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914AEE19BFB0A1008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B6119BFB1E6008A4679 /* ActionRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B0419BFB0B8008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B0E19BFB0B8008A4679 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B1919BFB0C5008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B5D19BFB1D6008A4679 /* SearchDeterminator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3914B2419BFB0C5008A4679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3914B2F19BFB0C5008A4679 /* ReSearchKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3914AE019BFB06B008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914AC119BFB06B008A4679 /* ReSearch */;
+			targetProxy = C3914ADF19BFB06B008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914AFC19BFB0A1008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914AF119BFB0A1008A4679 /* ReSearch Favourite */;
+			targetProxy = C3914AFB19BFB0A1008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914AFF19BFB0A2008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914AF119BFB0A1008A4679 /* ReSearch Favourite */;
+			targetProxy = C3914AFE19BFB0A2008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914B1219BFB0B8008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914B0719BFB0B8008A4679 /* ReSearch Choose */;
+			targetProxy = C3914B1119BFB0B8008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914B1519BFB0B8008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914B0719BFB0B8008A4679 /* ReSearch Choose */;
+			targetProxy = C3914B1419BFB0B8008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914B2A19BFB0C5008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914AC119BFB06B008A4679 /* ReSearch */;
+			targetProxy = C3914B2919BFB0C5008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914B3119BFB0C5008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914B1D19BFB0C5008A4679 /* ReSearchKit */;
+			targetProxy = C3914B3019BFB0C5008A4679 /* PBXContainerItemProxy */;
+		};
+		C3914B3519BFB0C5008A4679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3914B1D19BFB0C5008A4679 /* ReSearchKit */;
+			targetProxy = C3914B3419BFB0C5008A4679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3914AD719BFB06B008A4679 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3914AD819BFB06B008A4679 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3914AE619BFB06B008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3914AE719BFB06B008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3914AE919BFB06B008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2E9633F08248DD847DB954 /* Pods-ReSearch.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReSearch/ReSearch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ReSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C3914AEA19BFB06B008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2E9633F08248DD847DB954 /* Pods-ReSearch.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReSearch/ReSearch.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ReSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		C3914AEC19BFB06B008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSearch.app/ReSearch";
+			};
+			name = Debug;
+		};
+		C3914AED19BFB06B008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSearch.app/ReSearch";
+			};
+			name = Release;
+		};
+		C3914B0119BFB0A2008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReSearch Favourite/ReSearch Favourite.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReSearch Favourite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3914B0219BFB0A2008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReSearch Favourite/ReSearch Favourite.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ReSearch Favourite/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3914B1719BFB0B8008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReSearch Choose/ReSearch Choose.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReSearch Choose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3914B1819BFB0B8008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "ReSearch Choose/ReSearch Choose.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ReSearch Choose/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3914B3719BFB0C5008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReSearchKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3914B3819BFB0C5008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReSearchKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3914B3B19BFB0C5008A4679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReSearchKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSearch.app/ReSearch";
+			};
+			name = Debug;
+		};
+		C3914B3C19BFB0C5008A4679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReSearchKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReSearch.app/ReSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3914ABD19BFB06B008A4679 /* Build configuration list for PBXProject "ReSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914AE619BFB06B008A4679 /* Debug */,
+				C3914AE719BFB06B008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914AE819BFB06B008A4679 /* Build configuration list for PBXNativeTarget "ReSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914AE919BFB06B008A4679 /* Debug */,
+				C3914AEA19BFB06B008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914AEB19BFB06B008A4679 /* Build configuration list for PBXNativeTarget "ReSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914AEC19BFB06B008A4679 /* Debug */,
+				C3914AED19BFB06B008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914B0019BFB0A2008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Favourite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914B0119BFB0A2008A4679 /* Debug */,
+				C3914B0219BFB0A2008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914B1619BFB0B8008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Choose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914B1719BFB0B8008A4679 /* Debug */,
+				C3914B1819BFB0B8008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914B3619BFB0C5008A4679 /* Build configuration list for PBXNativeTarget "ReSearchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914B3719BFB0C5008A4679 /* Debug */,
+				C3914B3819BFB0C5008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3914B3A19BFB0C5008A4679 /* Build configuration list for PBXNativeTarget "ReSearchKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3914B3B19BFB0C5008A4679 /* Debug */,
+				C3914B3C19BFB0C5008A4679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C3ADA8F519BFC04300546E0D /* ReSearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C3ADA8F619BFC04300546E0D /* ReSearch.xcdatamodel */,
+			);
+			currentVersion = C3ADA8F619BFC04300546E0D /* ReSearch.xcdatamodel */;
+			path = ReSearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C3914ABA19BFB06B008A4679 /* Project object */;
+}

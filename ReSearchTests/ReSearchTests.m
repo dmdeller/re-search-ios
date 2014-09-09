@@ -1,6 +1,6 @@
 //
-//  ReSearchKitTests.m
-//  ReSearchKitTests
+//  ReSearchTests.m
+//  ReSearchTests
 //
 //  Created by David on 9/9/14.
 //  Copyright (c) 2014 David Deller. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface ReSearchKitTests : XCTestCase
+@interface ReSearchTests : XCTestCase
 
 @end
 
-@implementation ReSearchKitTests
+@implementation ReSearchTests
 
 - (void)setUp {
     [super setUp];
