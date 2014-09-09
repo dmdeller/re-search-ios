@@ -27,6 +27,51 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 //    return defaults;
 }
 
+#pragma mark - Engines
+
++ (NSDictionary *)redirectEngineForID:(NSString *)favouriteID inEngines:(NSArray *)engines currentEngineID:(NSString *)currentID
+{
+    static NSString *googleID = @"7A8141DE-CC69-46F0-B913-2719102ED88B";
+    static NSString *duckDuckGoID = @"11A7CF8D-9908-4D9E-B38C-68DD7E118958";
+    
+    if ([currentID isEqualToString:favouriteID])
+    {
+        if ([currentID isEqualToString:duckDuckGoID])
+        {
+            NSLog(@"%@: Current search page and favourite are both DuckDuckGo; redirecting to Google instead", self.class);
+            
+            return [self engineForID:googleID inEngines:engines];
+        }
+        else
+        {
+            NSLog(@"%@: Current search page and favourite are the same; redirecting to DuckDuckGo instead", self.class);
+            
+            return [self engineForID:duckDuckGoID inEngines:engines];
+        }
+    }
+    else
+    {
+        return [self engineForID:favouriteID inEngines:engines];
+    }
+}
+
++ (NSDictionary *)engineForID:(NSString *)ID inEngines:(NSArray *)engines
+{
+    for (NSDictionary *engineData in engines)
+    {
+        if ([engineData[kEngineID] isEqualToString:ID])
+        {
+            return engineData;
+        }
+    }
+    
+    NSLog(@"%@: Could not find engine for ID: %@", self.class, ID);
+    
+    return nil;
+}
+
+#pragma mark - URLs
+
 + (NSURL *)redirectURLForCurrentSearchPageURL:(NSURL *)currentURL error:(NSError **)errorRef
 {
     *errorRef = nil;
@@ -63,10 +108,14 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
             NSString *pageQuery = [self queryStringForEngineQueryPart:engineQueryPart pagePathPart:currentURLPathPart];
             if (pageQuery.length > 0)
             {
-                NSURL *redirectURL = [self redirectURLForEngineRedirectURL:engineData[kEngineRedirectURL] query:pageQuery];
-                if (redirectURL != nil)
+                NSDictionary *redirectEngineData = [self redirectEngineForID:[self.sharedDefaults objectForKey:kDefaultsFavouriteEngineID] inEngines:engines currentEngineID:engineData[kEngineID]];
+                if (redirectEngineData != nil)
                 {
-                    return redirectURL;
+                    NSURL *redirectURL = [self redirectURLForEngineRedirectURL:redirectEngineData[kEngineRedirectURL] query:pageQuery];
+                    if (redirectURL != nil)
+                    {
+                        return redirectURL;
+                    }
                 }
             }
         }
