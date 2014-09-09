@@ -63,6 +63,7 @@
     [MagicalRecord setupAutoMigratingCoreDataStack];
     
     [self importSeeds];
+    [self setupDefaults];
     [self exportDataToDefaults];
 }
 
@@ -109,6 +110,19 @@
     }
     
     NSLog(@"Finished seed import");
+}
+
+- (void)setupDefaults
+{
+    if ([SearchDeterminator.sharedDefaults stringForKey:kDefaultsFavouriteEngineID] == nil)
+    {
+        // Need a default engine.
+        // Don't want to use Google because that's already the iOS/Safari default.
+        // Don't want to use DuckDuckGo because privacy-conscious users (primary target of this app) will have already set that in Safari.
+        // Pick one that's unlikely to be set in Safari, but still familiar. Bing(-o)!
+        [SearchDeterminator.sharedDefaults setObject:kEngineIDBing forKey:kDefaultsFavouriteEngineID];
+        [SearchDeterminator.sharedDefaults synchronize];
+    }
 }
 
 // Yuck. This is due to not being able to get MagicalRecord (or indeed, ANY cocoapods) working with ReSearchKit.

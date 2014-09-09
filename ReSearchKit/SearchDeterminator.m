@@ -31,22 +31,19 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 
 + (NSDictionary *)redirectEngineForID:(NSString *)favouriteID inEngines:(NSArray *)engines currentEngineID:(NSString *)currentID
 {
-    static NSString *googleID = @"7A8141DE-CC69-46F0-B913-2719102ED88B";
-    static NSString *duckDuckGoID = @"11A7CF8D-9908-4D9E-B38C-68DD7E118958";
-    
     if ([currentID isEqualToString:favouriteID])
     {
-        if ([currentID isEqualToString:duckDuckGoID])
+        if ([currentID isEqualToString:kEngineIDDuckDuckGo])
         {
             NSLog(@"%@: Current search page and favourite are both DuckDuckGo; redirecting to Google instead", self.class);
             
-            return [self engineForID:googleID inEngines:engines];
+            return [self engineForID:kEngineIDGoogle inEngines:engines];
         }
         else
         {
             NSLog(@"%@: Current search page and favourite are the same; redirecting to DuckDuckGo instead", self.class);
             
-            return [self engineForID:duckDuckGoID inEngines:engines];
+            return [self engineForID:kEngineIDDuckDuckGo inEngines:engines];
         }
     }
     else

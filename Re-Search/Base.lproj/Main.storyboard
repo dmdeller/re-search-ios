@@ -55,12 +55,12 @@
         <scene sceneID="EwG-mx-LzN">
             <objects>
                 <tableViewController id="KTD-eu-k9b" customClass="EnginesViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="Onx-xl-FRT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Onx-xl-FRT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="engineCell" textLabel="bpk-Ek-ymi" detailTextLabel="at6-FK-8HA" style="IBUITableViewCellStyleSubtitle" id="crU-gS-h6S">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="engineCell" textLabel="bpk-Ek-ymi" style="IBUITableViewCellStyleDefault" id="crU-gS-h6S">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="crU-gS-h6S" id="9Nk-fX-nJG">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -68,12 +68,6 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bpk-Ek-ymi">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="at6-FK-8HA">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -86,10 +80,7 @@
                             <outlet property="delegate" destination="KTD-eu-k9b" id="CVn-Ad-Rj3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Search Engines" id="W6y-Fj-Aox">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="edit" id="vJe-wD-vAO"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="t1V-B9-PJP"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Search Engines" id="W6y-Fj-Aox"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZw-Cm-LOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
