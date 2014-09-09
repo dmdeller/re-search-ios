@@ -73,13 +73,13 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 {
     *errorRef = nil;
     
-    NSLog(@"------------------------ %@", [self.sharedDefaults objectForKey:@"test"]);
+    [self.sharedDefaults synchronize];
     
     NSArray *engines = [self.sharedDefaults objectForKey:kDefaultsAllEngines];
     NSString *currentURLHostPart = currentURL.host;
-    NSString *currentURLPathPart = currentURL.path;
+    NSString *currentURLPathPart = [NSString stringWithFormat:@"%@?%@", currentURL.path, currentURL.query];
     
-    NSLog(@"%@: Engines: %@", self.class, engines);
+//    NSLog(@"%@: Engines: %@", self.class, engines);
     
     if (engines.count == 0)
     {
@@ -141,12 +141,12 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
     
     if (![pagePathPart containsString:engineQueryFirstPart])
     {
-        NSLog(@"%@: domain matched, but current URL doesn't contain first part of queryPart: %@", self.class, engineQueryFirstPart);
+        NSLog(@"%@: domain matched, but current URL: %@ doesn't contain first part of queryPart: %@", self.class, pagePathPart, engineQueryFirstPart);
         return nil;
     }
     else if (engineQueryLastPart.length > 0 && ![pagePathPart containsString:engineQueryLastPart])
     {
-        NSLog(@"%@: domain matched, but current URL doesn't contain last part of queryPart: %@", self.class, engineQueryLastPart);
+        NSLog(@"%@: domain matched, but current URL: %@ doesn't contain last part of queryPart: %@", self.class, pagePathPart, engineQueryLastPart);
         return nil;
     }
     

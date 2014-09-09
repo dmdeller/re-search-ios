@@ -41,8 +41,8 @@ Action.prototype = {
         var newURL = arguments['newURL'];
         if (newURL)
         {
-            alert('got url!' + newURL);
-//            window.location.href = newURL;
+//            alert('got url!' + newURL);
+            window.location.href = newURL;
         }
         
         var error = arguments['error'];
