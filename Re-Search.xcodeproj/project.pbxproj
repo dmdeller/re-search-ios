@@ -33,7 +33,6 @@
 		C3B90777197B0A950098712F /* Re-Search: Favourite.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3B9076B197B0A950098712F /* Re-Search: Favourite.appex */; };
 		C3B90787197B0AA70098712F /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B90786197B0AA70098712F /* ActionViewController.m */; };
 		C3B90789197B0AA70098712F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B90788197B0AA70098712F /* MainInterface.storyboard */; };
-		C3B9078C197B0AA70098712F /* Re-Search: Choose.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3B90781197B0AA70098712F /* Re-Search: Choose.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +78,6 @@
 			remoteGlobalIDString = C3B9076A197B0A950098712F;
 			remoteInfo = "Re-Search: Favourite";
 		};
-		C3B9078A197B0AA70098712F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3B90780197B0AA70098712F;
-			remoteInfo = "Re-Search: Choose";
-		};
 		C3B9078D197B0AA70098712F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3B906E2197ADCC60098712F /* Project object */;
@@ -123,7 +115,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C3B9078C197B0AA70098712F /* Re-Search: Choose.appex in Embed App Extensions */,
 				C3B90777197B0A950098712F /* Re-Search: Favourite.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -493,7 +484,6 @@
 			dependencies = (
 				C3B90775197B0A950098712F /* PBXTargetDependency */,
 				C3B90779197B0A950098712F /* PBXTargetDependency */,
-				C3B9078B197B0AA70098712F /* PBXTargetDependency */,
 				C3B9078E197B0AA70098712F /* PBXTargetDependency */,
 				C30A265919BCCA760079E481 /* PBXTargetDependency */,
 				C30A265E19BCCA760079E481 /* PBXTargetDependency */,
@@ -787,11 +777,6 @@
 			isa = PBXTargetDependency;
 			target = C3B9076A197B0A950098712F /* Re-Search: Favourite */;
 			targetProxy = C3B90778197B0A950098712F /* PBXContainerItemProxy */;
-		};
-		C3B9078B197B0AA70098712F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3B90780197B0AA70098712F /* Re-Search: Choose */;
-			targetProxy = C3B9078A197B0AA70098712F /* PBXContainerItemProxy */;
 		};
 		C3B9078E197B0AA70098712F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
