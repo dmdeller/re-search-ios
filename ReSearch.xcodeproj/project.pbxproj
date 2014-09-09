@@ -13,9 +13,6 @@
 		C3914AD919BFB06B008A4679 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3914AD719BFB06B008A4679 /* LaunchScreen.xib */; };
 		C3914AE519BFB06B008A4679 /* ReSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914AE419BFB06B008A4679 /* ReSearchTests.m */; };
 		C3914AFD19BFB0A2008A4679 /* ReSearch Favourite.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C3914B0E19BFB0B8008A4679 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B0D19BFB0B8008A4679 /* ActionViewController.m */; };
-		C3914B1019BFB0B8008A4679 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3914B0F19BFB0B8008A4679 /* MainInterface.storyboard */; };
-		C3914B1319BFB0B8008A4679 /* ReSearch Choose.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C3914B2F19BFB0C5008A4679 /* ReSearchKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3914B2E19BFB0C5008A4679 /* ReSearchKitTests.m */; };
 		C3914B3219BFB0C5008A4679 /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
 		C3914B3319BFB0C5008A4679 /* ReSearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -35,7 +32,6 @@
 		C3ADA8EA19BFB28E00546E0D /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
 		C3ADA8ED19BFBB0B00546E0D /* SearchEngine.json in Resources */ = {isa = PBXBuildFile; fileRef = C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */; };
 		C3ADA8F119BFBB5A00546E0D /* SearchEngine.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3ADA8EC19BFBB0B00546E0D /* SearchEngine.json */; };
-		C3ADA8F419BFBDB300546E0D /* ReSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */; };
 		C3ADA8F719BFC04300546E0D /* ReSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3ADA8F519BFC04300546E0D /* ReSearch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -60,20 +56,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = C3914AF119BFB0A1008A4679;
 			remoteInfo = "ReSearch Favourite";
-		};
-		C3914B1119BFB0B8008A4679 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3914B0719BFB0B8008A4679;
-			remoteInfo = "ReSearch Choose";
-		};
-		C3914B1419BFB0B8008A4679 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3914ABA19BFB06B008A4679 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3914B0719BFB0B8008A4679;
-			remoteInfo = "ReSearch Choose";
 		};
 		C3914B2919BFB0C5008A4679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -106,7 +88,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				C3914AFD19BFB0A2008A4679 /* ReSearch Favourite.appex in Embed App Extensions */,
-				C3914B1319BFB0B8008A4679 /* ReSearch Choose.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,7 +128,6 @@
 		C3914AE419BFB06B008A4679 /* ReSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReSearchTests.m; sourceTree = "<group>"; };
 		C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReSearch Favourite.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3914AF519BFB0A1008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReSearch Choose.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3914B0B19BFB0B8008A4679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3914B0C19BFB0B8008A4679 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
 		C3914B0D19BFB0B8008A4679 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
@@ -210,14 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3914B0519BFB0B8008A4679 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3ADA8F419BFBDB300546E0D /* ReSearchKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3914B1A19BFB0C5008A4679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,7 +228,6 @@
 				C3914AC219BFB06B008A4679 /* ReSearch.app */,
 				C3914ADE19BFB06B008A4679 /* ReSearchTests.xctest */,
 				C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */,
-				C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */,
 				C3914B1E19BFB0C5008A4679 /* ReSearchKit.framework */,
 				C3914B2819BFB0C5008A4679 /* ReSearchKitTests.xctest */,
 			);
@@ -458,8 +429,6 @@
 			dependencies = (
 				C3914AFC19BFB0A1008A4679 /* PBXTargetDependency */,
 				C3914AFF19BFB0A2008A4679 /* PBXTargetDependency */,
-				C3914B1219BFB0B8008A4679 /* PBXTargetDependency */,
-				C3914B1519BFB0B8008A4679 /* PBXTargetDependency */,
 				C3914B3119BFB0C5008A4679 /* PBXTargetDependency */,
 				C3914B3519BFB0C5008A4679 /* PBXTargetDependency */,
 			);
@@ -501,23 +470,6 @@
 			name = "ReSearch Favourite";
 			productName = "ReSearch Favourite";
 			productReference = C3914AF219BFB0A1008A4679 /* ReSearch Favourite.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		C3914B0719BFB0B8008A4679 /* ReSearch Choose */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3914B1619BFB0B8008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Choose" */;
-			buildPhases = (
-				C3914B0419BFB0B8008A4679 /* Sources */,
-				C3914B0519BFB0B8008A4679 /* Frameworks */,
-				C3914B0619BFB0B8008A4679 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ReSearch Choose";
-			productName = "ReSearch Choose";
-			productReference = C3914B0819BFB0B8008A4679 /* ReSearch Choose.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		C3914B1D19BFB0C5008A4679 /* ReSearchKit */ = {
@@ -587,15 +539,6 @@
 							};
 						};
 					};
-					C3914B0719BFB0B8008A4679 = {
-						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 2ZS98V3L3J;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
 					C3914B1D19BFB0C5008A4679 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -621,7 +564,6 @@
 				C3914AC119BFB06B008A4679 /* ReSearch */,
 				C3914ADD19BFB06B008A4679 /* ReSearchTests */,
 				C3914AF119BFB0A1008A4679 /* ReSearch Favourite */,
-				C3914B0719BFB0B8008A4679 /* ReSearch Choose */,
 				C3914B1D19BFB0C5008A4679 /* ReSearchKit */,
 				C3914B2719BFB0C5008A4679 /* ReSearchKitTests */,
 			);
@@ -652,14 +594,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3914B6219BFB1E6008A4679 /* Action.js in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3914B0619BFB0B8008A4679 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3914B1019BFB0B8008A4679 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,14 +679,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3914B0419BFB0B8008A4679 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3914B0E19BFB0B8008A4679 /* ActionViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C3914B1919BFB0C5008A4679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -786,16 +712,6 @@
 			isa = PBXTargetDependency;
 			target = C3914AF119BFB0A1008A4679 /* ReSearch Favourite */;
 			targetProxy = C3914AFE19BFB0A2008A4679 /* PBXContainerItemProxy */;
-		};
-		C3914B1219BFB0B8008A4679 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3914B0719BFB0B8008A4679 /* ReSearch Choose */;
-			targetProxy = C3914B1119BFB0B8008A4679 /* PBXContainerItemProxy */;
-		};
-		C3914B1519BFB0B8008A4679 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3914B0719BFB0B8008A4679 /* ReSearch Choose */;
-			targetProxy = C3914B1419BFB0B8008A4679 /* PBXContainerItemProxy */;
 		};
 		C3914B2A19BFB0C5008A4679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1000,38 +916,6 @@
 			};
 			name = Release;
 		};
-		C3914B1719BFB0B8008A4679 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "ReSearch Choose/ReSearch Choose.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ReSearch Choose/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C3914B1819BFB0B8008A4679 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "ReSearch Choose/ReSearch Choose.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "ReSearch Choose/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 		C3914B3719BFB0C5008A4679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1141,15 +1025,6 @@
 			buildConfigurations = (
 				C3914B0119BFB0A2008A4679 /* Debug */,
 				C3914B0219BFB0A2008A4679 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3914B1619BFB0B8008A4679 /* Build configuration list for PBXNativeTarget "ReSearch Choose" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3914B1719BFB0B8008A4679 /* Debug */,
-				C3914B1819BFB0B8008A4679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
