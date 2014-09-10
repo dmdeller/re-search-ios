@@ -77,7 +77,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
-    return @"Choose a search engine to show results from when you use the Re-Search extension in Safari.";
+    return @"Choose a search engine to show results from when you use the Re-Search extension in Safari.\n\nFor best results, choose a different search engine than the one you have set for Safari.";
 }
 
 #pragma mark - UITableViewDelegate
