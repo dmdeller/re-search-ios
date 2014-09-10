@@ -94,7 +94,7 @@
                 
                 // Each record must have a unique primary key, and the attribute must be specified using 'relatedByAttribute' in the xcdatamodel
                 // https://github.com/magicalpanda/MagicalRecord/issues/180#issuecomment-6403926
-                [recordClass MR_importFromArray:data];
+                [recordClass importFromArrayAndWait:data inContext:NSManagedObjectContext.MR_defaultContext];
                 
                 NSLog(@"Imported %@ seeds", entityName);
             }
@@ -138,7 +138,11 @@
         [serializedData addObject:engine.serializedData];
     }
     
-    [SearchDeterminator.sharedDefaults setObject:@"hello" forKey:@"test"];
+    if (engines.count == 0)
+    {
+        NSLog(@"!!! NO ENGINES !!!");
+    }
+    
     [SearchDeterminator.sharedDefaults setObject:[NSArray arrayWithArray:serializedData] forKey:kDefaultsAllEngines];
     [SearchDeterminator.sharedDefaults synchronize];
     

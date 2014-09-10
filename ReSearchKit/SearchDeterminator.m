@@ -83,6 +83,8 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
     
     if (engines.count == 0)
     {
+        NSLog(@"%@: Couldn't find defaults!!! %@", self.class, self.sharedDefaults.dictionaryRepresentation);
+        
         NSError *error = [NSError errorWithDomain:SearchDeterminatorErrorDomain code:0 userInfo:@{
             NSLocalizedDescriptionKey: @"Please open the Re-Search app before using the extension.",
         }];

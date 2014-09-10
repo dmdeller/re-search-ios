@@ -11,5 +11,6 @@
 @interface Record : NSManagedObject
 
 - (NSDictionary *)serializedData;
++ (NSArray *)importFromArrayAndWait:(NSArray *)listOfObjectData inContext:(NSManagedObjectContext *)context;
 
 @end

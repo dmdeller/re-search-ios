@@ -8,6 +8,8 @@
 
 #import "Record.h"
 
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+
 @implementation Record
 
 - (NSDictionary *)serializedData
@@ -35,6 +37,30 @@
     }
     
     return [NSDictionary dictionaryWithDictionary:data];
+}
+
+#pragma mark -
+
++ (NSArray *)importFromArrayAndWait:(NSArray *)listOfObjectData inContext:(NSManagedObjectContext *)context
+{
+    NSMutableArray *objectIDs = [NSMutableArray array];
+    
+    [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext)
+     {
+         [listOfObjectData enumerateObjectsWithOptions:0 usingBlock:^(id obj, NSUInteger idx, BOOL *stop)
+          {
+              NSDictionary *objectData = (NSDictionary *)obj;
+              
+              NSManagedObject *dataObject = [self MR_importFromObject:objectData inContext:localContext];
+              
+              if ([context obtainPermanentIDsForObjects:[NSArray arrayWithObject:dataObject] error:nil])
+              {
+                  [objectIDs addObject:[dataObject objectID]];
+              }
+          }];
+     }];
+    
+    return [self MR_findAllWithPredicate:[NSPredicate predicateWithFormat:@"self IN %@", objectIDs] inContext:context];
 }
 
 @end
