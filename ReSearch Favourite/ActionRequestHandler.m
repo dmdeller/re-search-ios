@@ -23,9 +23,6 @@
     
     __block BOOL found = NO;
     
-    NSLog(@"context: %@", context);
-    NSLog(@"context.inputItems: %@", context.inputItems);
-    
     // Find the item containing the results from the JavaScript preprocessing.
     for (NSExtensionItem* item in context.inputItems)
     {
@@ -57,24 +54,7 @@
 
 - (void)itemLoadCompletedWithPreprocessingResults:(NSDictionary *)javaScriptPreprocessingResults
 {
-    // Here, do something, potentially asynchronously, with the preprocessing
-    // results.
-    
-//    // In this very simple example, the JavaScript will have passed us the
-//    // current background color style, if there is one. We will construct a
-//    // dictionary to send back with a desired new background color style.
-//    if ([javaScriptPreprocessingResults[@"currentBackgroundColor"] length] == 0)
-//    {
-//        // No specific background color? Request setting the background to red.
-//        [self doneWithResults:@{ @"newBackgroundColor": @"red" }];
-//    }
-//    else
-//    {
-//        // Specific background color is set? Request replacing it with green.
-//        [self doneWithResults:@{ @"newBackgroundColor": @"green" }];
-//    }
-    
-    NSLog(@"Look it's a URL! %@", javaScriptPreprocessingResults[@"url"]);
+    NSLog(@"%@: Got URL: %@", self.class, javaScriptPreprocessingResults[@"url"]);
     
     NSURL *currentURL = [NSURL URLWithString:javaScriptPreprocessingResults[@"url"]];
     

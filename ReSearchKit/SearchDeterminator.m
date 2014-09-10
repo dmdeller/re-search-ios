@@ -20,11 +20,6 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
 + (NSUserDefaults *)sharedDefaults
 {
     return [NSUserDefaults.alloc initWithSuiteName:kAppGroupID];
-    
-//    NSUserDefaults *defaults = NSUserDefaults.new;
-//    [defaults addSuiteNamed:kAppGroupID];
-//    
-//    return defaults;
 }
 
 #pragma mark - Engines
@@ -78,8 +73,6 @@ static NSString *const kEngineRedirectURL = @"redirectURL";
     NSArray *engines = [self.sharedDefaults objectForKey:kDefaultsAllEngines];
     NSString *currentURLHostPart = currentURL.host;
     NSString *currentURLPathPart = [NSString stringWithFormat:@"%@?%@", currentURL.path, currentURL.query];
-    
-//    NSLog(@"%@: Engines: %@", self.class, engines);
     
     if (engines.count == 0)
     {
