@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleIconFile</key>
+	<string>ExtensionIcon</string>
 	<key>CFBundleDisplayName</key>
 	<string>Re-Search</string>
 	<key>CFBundleExecutable</key>
@@ -41,6 +43,8 @@
 			</dict>
 			<key>NSExtensionJavaScriptPreprocessingFile</key>
 			<string>Action</string>
+			<key>NSExtensionServiceToolbarIconFile</key>
+			<string>ExtensionIcon</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.services</string>
