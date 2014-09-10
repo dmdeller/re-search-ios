@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Welcome-->
+        <!--How To-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="WelcomeViewController" sceneMemberID="viewController">
@@ -45,7 +45,7 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Welcome" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="How To" image="How To" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -90,7 +90,7 @@
         <scene sceneID="4ke-cs-w7B">
             <objects>
                 <navigationController id="If9-IZ-4dN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Engines" id="Ps7-1B-nCl"/>
+                    <tabBarItem key="tabBarItem" title="Engines" image="Engines" id="Ps7-1B-nCl"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BKL-cu-ALo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -173,7 +173,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Engines" width="24" height="24"/>
+        <image name="How To" width="24" height="24"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

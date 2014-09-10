@@ -24,6 +24,7 @@
 {
     // Override point for customization after application launch.
     
+    [self setupStyle];
     [self setupCoreData];
     
     return YES;
@@ -54,6 +55,14 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark -
+
+- (void)setupStyle
+{
+    // 185,97,84
+    self.window.tintColor = [UIColor colorWithRed:(185/256.0) green:(97/256.0) blue:(84/256.0) alpha:1.0];
 }
 
 #pragma mark - Core Data
