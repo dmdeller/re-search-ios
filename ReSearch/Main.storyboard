@@ -5,6 +5,23 @@
     </dependencies>
     <scenes>
         <!--How To-->
+        <scene sceneID="5Iw-Kz-fC5">
+            <objects>
+                <navigationController id="te1-3R-Wce" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="How To" image="How To" id="DFo-gc-dpu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fcw-LH-i1q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="pc8-ql-E7d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eph-CL-9WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="-215"/>
+        </scene>
+        <!--How To Use Re-Search-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="WelcomeViewController" sceneMemberID="viewController">
@@ -29,13 +46,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="How To" image="How To" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="How To Use Re-Search" id="vo2-qW-Vyt"/>
                     <connections>
                         <outlet property="scrollView" destination="1je-Ok-OVm" id="CzO-T1-dmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-293"/>
+            <point key="canvasLocation" x="1503" y="-215"/>
         </scene>
         <!--Search Engines-->
         <scene sceneID="EwG-mx-LzN">
@@ -149,8 +167,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="If9-IZ-4dN" kind="relationship" relationship="viewControllers" id="4wl-Ok-QPU"/>
+                        <segue destination="te1-3R-Wce" kind="relationship" relationship="viewControllers" id="txj-FZ-g3h"/>
+                        <segue destination="If9-IZ-4dN" kind="relationship" relationship="viewControllers" id="A1r-G9-SEI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

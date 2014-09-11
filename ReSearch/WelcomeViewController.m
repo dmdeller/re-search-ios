@@ -11,6 +11,7 @@
 @interface WelcomeViewController ()
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UIView *howToContainerView;
 @property (strong, nonatomic) IBOutlet UIView *howToView;
 
 @end
@@ -23,28 +24,26 @@
     
     [NSBundle.mainBundle loadNibNamed:@"HowTo" owner:self options:nil];
     
-    [self.scrollView addSubview:self.howToView];
+    // https://developer.apple.com/library/ios/technotes/tn2154/_index.html
+    [self.scrollView addSubview:self.howToContainerView];
+    
+    // Set the translatesAutoresizingMaskIntoConstraints to NO so that the views autoresizing mask is not translated into auto layout constraints.
+    self.scrollView.translatesAutoresizingMaskIntoConstraints  = NO;
+    self.howToContainerView.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    // Set the constraints for the scroll view and the image view.
+    NSDictionary *viewsDictionary = @{@"scrollView": self.scrollView, @"howToContainerView": self.howToContainerView};
+    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[howToContainerView]|" options:0 metrics: 0 views:viewsDictionary]];
+    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[howToContainerView]|" options:0 metrics: 0 views:viewsDictionary]];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.howToContainerView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.howToView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0]];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)updateViewConstraints
-{
-    [super updateViewConstraints];
-    
-    NSLayoutConstraint *widthConstraint1 = [NSLayoutConstraint constraintWithItem:self.howToView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
-    widthConstraint1.priority = UILayoutPriorityDefaultHigh;
-    
-    NSLayoutConstraint *widthConstraint2 = [NSLayoutConstraint constraintWithItem:self.howToView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:450.0];
-    
-    [self.view addConstraint:widthConstraint1];
-    [self.howToView addConstraint:widthConstraint2];
-    
-    self.scrollView.contentSize = self.howToView.bounds.size;
 }
 
 @end

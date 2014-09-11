@@ -10,6 +10,12 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nL-ce-lOg">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
+                    <items>
+                        <navigationItem id="fHB-FK-1fN"/>
+                    </items>
+                </navigationBar>
                 <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-un-5n7">
                     <rect key="frame" x="0.0" y="431" width="480" height="49"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -22,8 +28,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="UlE-un-5n7" secondAttribute="bottom" id="MyL-Bm-pZ9"/>
+                <constraint firstAttribute="trailing" secondItem="5nL-ce-lOg" secondAttribute="trailing" id="dcy-rk-Vwc"/>
                 <constraint firstItem="UlE-un-5n7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l0j-xp-X6s"/>
+                <constraint firstItem="5nL-ce-lOg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tqj-5X-Be5"/>
                 <constraint firstAttribute="trailing" secondItem="UlE-un-5n7" secondAttribute="trailing" id="y8q-He-xcp"/>
+                <constraint firstItem="5nL-ce-lOg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zdd-0v-N8c"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
