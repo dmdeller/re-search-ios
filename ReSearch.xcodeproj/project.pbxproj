@@ -38,6 +38,7 @@
 		C3B4FA0919C0EE890067C2C1 /* ExtensionIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3B4FA0519C0EE890067C2C1 /* ExtensionIcon@2x.png */; };
 		C3B4FA0A19C0EE890067C2C1 /* ExtensionIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3B4FA0619C0EE890067C2C1 /* ExtensionIcon@3x.png */; };
 		C3B4FA0C19C115DD0067C2C1 /* HowTo.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B4FA0B19C115DD0067C2C1 /* HowTo.xib */; };
+		C3B4FA0E19C13E150067C2C1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3B4FA0D19C13E150067C2C1 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +174,7 @@
 		C3B4FA0519C0EE890067C2C1 /* ExtensionIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExtensionIcon@2x.png"; sourceTree = "<group>"; };
 		C3B4FA0619C0EE890067C2C1 /* ExtensionIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExtensionIcon@3x.png"; sourceTree = "<group>"; };
 		C3B4FA0B19C115DD0067C2C1 /* HowTo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HowTo.xib; sourceTree = "<group>"; };
+		C3B4FA0D19C13E150067C2C1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 				C3ADA8EB19BFB8B500546E0D /* ReSearch.entitlements */,
 				C3914AC619BFB06B008A4679 /* Info.plist */,
 				C3914AC719BFB06B008A4679 /* main.m */,
+				C3B4FA0D19C13E150067C2C1 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			buildConfigurationList = C3914AE819BFB06B008A4679 /* Build configuration list for PBXNativeTarget "ReSearch" */;
 			buildPhases = (
 				15461CFFCF964002B6EC71C3 /* Check Pods Manifest.lock */,
+				C3B4FA0F19C13E610067C2C1 /* ShellScript */,
 				C3914ABE19BFB06B008A4679 /* Sources */,
 				C3914ABF19BFB06B008A4679 /* Frameworks */,
 				C3914AC019BFB06B008A4679 /* Resources */,
@@ -594,6 +598,7 @@
 				C3914B4719BFB193008A4679 /* Main.storyboard in Resources */,
 				C3ADA8ED19BFBB0B00546E0D /* SearchEngine.json in Resources */,
 				C3914AD919BFB06B008A4679 /* LaunchScreen.xib in Resources */,
+				C3B4FA0E19C13E150067C2C1 /* Settings.bundle in Resources */,
 				C3914AD619BFB06B008A4679 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -663,6 +668,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-ReSearch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C3B4FA0F19C13E610067C2C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copy version number into Settings.bundle\n# http://stackoverflow.com/a/12842530\nproject_path=\"$SRCROOT/ReSearch\"\ninfo_plist=\"$project_path/Info.plist\"\nsettings_root_plist=\"$project_path/Settings.bundle/Root.plist\"\nversion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$info_plist\"`\nbuild_num=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$info_plist\"`\n/usr/libexec/PlistBuddy \"$settings_root_plist\" -c \"set PreferenceSpecifiers:1:DefaultValue $version ($build_num)\"\ntouch \"$settings_root_plist\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

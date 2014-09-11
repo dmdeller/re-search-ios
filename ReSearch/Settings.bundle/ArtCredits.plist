@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>FooterText</key>
+			<string>This application makes use of the following artwork:
+    			
+iOS 7 icons by Visual Pharm
+
+Creative Commons Attribution-No Derivative Works 3.0 Unported
+http://icons8.com/free-ios-7-icons-in-vector/
+</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>ArtCredits</string>
+	<key>Title</key>
+	<string>Art Credits</string>
+</dict>
+</plist>

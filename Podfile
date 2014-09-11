@@ -13,9 +13,9 @@ target "ReSearch Favourite" do
 
 end
 
-target "ReSearch Choose" do
-
-end
+#target "ReSearch Choose" do
+#
+#end
 
 target "ReSearchKit" do
 
@@ -25,3 +25,8 @@ target "ReSearchKitTests" do
 
 end
 
+# https://github.com/CocoaPods/CocoaPods/wiki/Acknowledgements#ios-setting-bundle
+post_install do |installer|
+    require 'fileutils'
+    FileUtils.cp_r('Pods/Pods-ReSearch-acknowledgements.plist', 'ReSearch/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+end
